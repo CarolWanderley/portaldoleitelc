@@ -21,7 +21,7 @@ public class Global extends GlobalSettings {
 	private static GenericDAOImpl dao = new GenericDAOImpl();
 	private List<Disciplina> disciplinas = new ArrayList<>();
 	private List<User> usuarios = new ArrayList<>();
-	private List<Dica> dicas = new ArrayList<>();
+	//private List<Dica> dicas = new ArrayList<>();
 	
 	private Disciplina si1; 
 	private Disciplina oac; 
@@ -84,7 +84,7 @@ public class Global extends GlobalSettings {
 		si1.addTema(new Tema("Minitestes"));
 		si1.addTema(new Tema("Projeto"));
 		dao.persist(si1);
-		dao.flush();
+
 		
 		oac = new Disciplina("Organização e Arquitetura de Computadores");
 		oac.addTema(new Tema("Organização Básica de Computadores"));
@@ -93,7 +93,7 @@ public class Global extends GlobalSettings {
 		oac.addTema(new Tema("Organização e Arquitetura Básicas de Computadores"));
 		oac.addTema(new Tema("Arquitetura do Conjunto de Instruções"));
 		dao.persist(oac);
-		dao.flush();
+
 		
 		log = new Disciplina("Lógica Matemática");
 		log.addTema(new Tema("Lógica Proposicional"));
@@ -108,47 +108,46 @@ public class Global extends GlobalSettings {
 		User carol = new User("ca@bol.com","misan123","carolw");
 		carol.setNome("Ana Caroline Wanderley");
 		dao.persist(carol);
-		dao.flush();
-		
+
 		User luiza = new User("lu@bol.com","fem123","luizac");
 		luiza.setNome("Luiza Carvalho");
 		dao.persist(luiza);
-		dao.flush();
+
 
 		User dands = new User("da@bol.com","het123","dands");
 		dands.setNome("Dandara Maria");
 		dao.persist(dands);
-		dao.flush();
+
 
 		User nat = new User("nat@bol.com","gos123","natg");
 		nat.setNome("Natália Gomes");
 		dao.persist(nat);
-		dao.flush();
+
 
 		User aline = new User("tro@bol.com","sapa123","alinet");
 		aline.setNome("Aline Trovão");
 		dao.persist(aline);
-		dao.flush();
+
 
 		User mari = new User("ma@bol.com","fom123","maril");
 		mari.setNome("Mariane Linhares");
 		dao.persist(mari);
-		dao.flush();
+
 
 		User paulo = new User("vini@bol.com","ro123","vinip");
 		paulo.setNome("Paulo Vinicius");
 		dao.persist(paulo);
-		dao.flush();
+
 
 		User italo = new User("italindo@bol.com","vibes123","italob");
 		italo.setNome("Ítalo Batista");
 		dao.persist(italo);
-		dao.flush();
+	
 
 		User dre = new User("dre@bol.com","fecha123","andren");
 		dre.setNome("André Andrade");
 		dao.persist(dre);
-		dao.flush();
+		
 
 		User luiz = new User("luiz@bol.com","sam123","luizf");
 		luiz.setNome("Luiz Fonseca");

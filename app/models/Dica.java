@@ -61,7 +61,7 @@ public abstract class Dica implements Comparable<Dica>{
 	private List<String> usuarioqueQueJaDenunciaram;
 	
 	@Transient
-	private DicaDisciplina instanciaDisciplina;
+	private Disciplina instanciaDisciplina;
 	
 	public Dica(){
 		dataPublicacao = Calendar.getInstance();
@@ -166,11 +166,13 @@ public abstract class Dica implements Comparable<Dica>{
 	
 	public void checaTipoDica() {
 		if (this.getTipo().equals("DicaDisciplina")) {
-			this.instanciaDisciplina = (DicaDisciplina) this;
+			///wtf
 		}		
 	}
-	
-	public DicaDisciplina getInstanciaDisciplina() {
+	public void setInstanciaDisciplina(Disciplina instanciaDisciplina) {
+		 this.instanciaDisciplina = instanciaDisciplina;
+	}
+	public Disciplina getInstanciaDisciplina() {
 		return instanciaDisciplina;
 	}
 	
