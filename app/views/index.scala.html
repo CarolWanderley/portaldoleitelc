@@ -50,6 +50,7 @@
                     <div class="uk-panel uk-panel-box">
                         <div class="uk-article">
                                 <h1>Bem-vindo(a) ao Portal do Leite!</h1>
+                                <h3>Dicas Postadas Recentemente:</h3>
                             <div>
                             </div>
                             <hr class="uk-article-divider-orange">
@@ -57,6 +58,8 @@
                             <p>Não existem dicas</p>
                         }
                             @for(dica <- dicas){
+                        <div>
+                            <div>
                         <a class="uk-article-meta uk-text-success" data-uk-modal="{target:'#avaliacao-modal'}">
                                 Informações sobre <strong>"@dica.getTema().getName()"</strong> <i class="uk-icon-hover uk-icon-info-circle"></i>, tema da disciplina: <strong>"@dica.getTema().getDisciplina().getNome()"</strong></a>   
                             </div>
@@ -152,5 +155,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </body>
 </html>
