@@ -1,5 +1,6 @@
 package models;
 
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -47,6 +48,10 @@ public abstract class Dica implements Comparable<Dica>{
 	private int concordancias;
 	
 	@Column
+	private Calendar dataPublicacao;
+	
+	private Compara comp;
+	@Column
 	private int discordancias;
 	
 	@Column
@@ -58,7 +63,18 @@ public abstract class Dica implements Comparable<Dica>{
 	@Transient
 	private DicaDisciplina instanciaDisciplina;
 	
-	public Dica(){}
+	public Dica(){
+		dataPublicacao = Calendar.getInstance();
+		comp = new ComparaConcordancia();
+	}
+
+	public Compara getComp() {
+		return comp;
+	}
+
+	public void setComp(Compara comp) {
+		this.comp = comp;
+	}
 
 	public Tema getTema() {
 		return tema;
@@ -144,14 +160,8 @@ public abstract class Dica implements Comparable<Dica>{
 	 * dicas da lista sejam as com mais concordâncias.
 	 */
 	@Override
-	public int compareTo(Dica otherDica) {
-		if (this.getConcordancias()>otherDica.getConcordancias()) {
-			return -1;
-		} else if (this.getConcordancias()<otherDica.getConcordancias()) {
-			return 1;
-		} else {
-			return 0;
-		}
+	public int compareTo(Dica otherDica) {	
+		return comp.comparador(this, otherDica);
 	}
 	
 	public void checaTipoDica() {
@@ -185,4 +195,9 @@ public abstract class Dica implements Comparable<Dica>{
 	}
 
 	public abstract String getTipo();
+
+	public Calendar getDataPublicacao() {
+		return dataPublicacao;
+	}
+
 }
