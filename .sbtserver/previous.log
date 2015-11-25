@@ -1,0 +1,1176 @@
+New log file opened at Tue Nov 24 09:59:13 BRST 2015 by 15192@Cassandra
+jvm 15192@Cassandra
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=C:\Users\Luiza\Documents\portaldoleite-master
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory C:\Users\Luiza\Documents\portaldoleite-master\project
+[Loading] Found non-root projects 
+[Loading] Done in C:\Users\Luiza\Documents\portaldoleite-master\project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in C:\Users\Luiza\Documents\portaldoleite-master\project, returning: (portaldoleite-master-build)
+Loading project definition from C:\Users\Luiza\Documents\portaldoleite-master\project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@35c43769, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+[Loading] Scanning directory C:\Users\Luiza\Documents\portaldoleite-master
+[Loading] Found non-root projects 
+[Loading] Done in C:\Users\Luiza\Documents\portaldoleite-master, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.SerializersPlugin,sbt.plugins.SendEventServicePlugin,sbt.plugins.InteractionServicePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.BackgroundRunPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in C:\Users\Luiza\Documents\portaldoleite-master, returning: (portaldoleite-master)
+Set current project to PortalDoLeite (in build file:/C:/Users/Luiza/Documents/portaldoleite-master/)
+Reapplying settings...
+Set current project to PortalDoLeite (in build file:/C:/Users/Luiza/Documents/portaldoleite-master/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/C:/Users/Luiza/Documents/portaldoleite-master/}portaldoleite-master/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@18a1a8be, check cycles: false
+Total time: 0 s, completed 24/11/2015 09:59:20
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Luiza/Documents/portaldoleite-master/}portaldoleite-master/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@35b15bc5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 2 s, completed 24/11/2015 09:59:22
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Luiza/Documents/portaldoleite-master/}portaldoleite-master/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@5dc4d585, check cycles: false
+Total time: 0 s, completed 24/11/2015 09:59:22
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Luiza/Documents/portaldoleite-master/}portaldoleite-master/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@5903944d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 24/11/2015 09:59:23
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@6a9de3af, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\application.conf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\application.conf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\routes,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\routes)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF\persistence.xml,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF\persistence.xml)
+Copy play resource mappings: 
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.eot,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.eot)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.ttf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.ttf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.woff,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.woff)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.woff2,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.woff2)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\FontAwesome.otf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\FontAwesome.otf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\images\favicon.png,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\images\favicon.png)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\images\logo.png,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\images\logo.png)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\angular.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\angular.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\jquery-1.9.0.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\jquery-1.9.0.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\main.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\main.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\uikit.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\uikit.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\uikit.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\uikit.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\accordion.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\accordion.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\accordion.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\accordion.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\autocomplete.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\autocomplete.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\autocomplete.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\autocomplete.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\datepicker.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\datepicker.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\datepicker.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\datepicker.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-password.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-password.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-password.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-password.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-select.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-select.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-select.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-select.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\grid.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\grid.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\grid.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\grid.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\htmleditor.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\htmleditor.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\htmleditor.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\htmleditor.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\lightbox.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\lightbox.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\lightbox.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\lightbox.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\nestable.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\nestable.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\nestable.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\nestable.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\notify.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\notify.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\notify.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\notify.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\pagination.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\pagination.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\pagination.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\pagination.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\search.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\search.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\search.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\search.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow-fx.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow-fx.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow-fx.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow-fx.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sortable.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sortable.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sortable.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sortable.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sticky.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sticky.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sticky.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sticky.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\timepicker.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\timepicker.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\timepicker.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\timepicker.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\tooltip.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\tooltip.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\tooltip.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\tooltip.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\upload.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\upload.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\upload.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\upload.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\alert.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\alert.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\alert.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\alert.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\button.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\button.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\button.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\button.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\core.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\core.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\core.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\core.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\cover.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\cover.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\cover.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\cover.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\dropdown.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\dropdown.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\dropdown.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\dropdown.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\grid.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\grid.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\grid.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\grid.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\modal.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\modal.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\modal.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\modal.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\nav.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\nav.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\nav.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\nav.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\offcanvas.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\offcanvas.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\offcanvas.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\offcanvas.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\scrollspy.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\scrollspy.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\scrollspy.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\scrollspy.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\smooth-scroll.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\smooth-scroll.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\smooth-scroll.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\smooth-scroll.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\switcher.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\switcher.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\switcher.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\switcher.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\tab.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\tab.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\tab.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\tab.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\toggle.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\toggle.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\toggle.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\toggle.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\touch.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\touch.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\touch.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\touch.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\utility.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\utility.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\utility.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\utility.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\bootstrap.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\bootstrap.css)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\main.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\main.css)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\portalDoLeite_uikit.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\portalDoLeite_uikit.css)
+Total time: 2 s, completed 24/11/2015 09:59:44
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 15192
+This application is already running (Or delete C:\Users\Luiza\Documents\portaldoleite-master\RUNNING_PID file).
+Exception in thread "sbt-bg-threads-1" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@48e985b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\application.conf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\application.conf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\routes,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\routes)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF\persistence.xml,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF\persistence.xml)
+Copy play resource mappings: 
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.eot,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.eot)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.ttf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.ttf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.woff,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.woff)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.woff2,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.woff2)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\FontAwesome.otf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\FontAwesome.otf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\images\favicon.png,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\images\favicon.png)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\images\logo.png,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\images\logo.png)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\angular.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\angular.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\jquery-1.9.0.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\jquery-1.9.0.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\main.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\main.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\uikit.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\uikit.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\uikit.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\uikit.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\accordion.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\accordion.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\accordion.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\accordion.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\autocomplete.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\autocomplete.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\autocomplete.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\autocomplete.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\datepicker.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\datepicker.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\datepicker.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\datepicker.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-password.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-password.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-password.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-password.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-select.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-select.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-select.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-select.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\grid.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\grid.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\grid.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\grid.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\htmleditor.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\htmleditor.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\htmleditor.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\htmleditor.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\lightbox.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\lightbox.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\lightbox.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\lightbox.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\nestable.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\nestable.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\nestable.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\nestable.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\notify.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\notify.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\notify.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\notify.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\pagination.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\pagination.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\pagination.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\pagination.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\search.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\search.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\search.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\search.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow-fx.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow-fx.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow-fx.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow-fx.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sortable.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sortable.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sortable.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sortable.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sticky.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sticky.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sticky.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sticky.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\timepicker.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\timepicker.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\timepicker.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\timepicker.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\tooltip.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\tooltip.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\tooltip.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\tooltip.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\upload.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\upload.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\upload.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\upload.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\alert.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\alert.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\alert.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\alert.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\button.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\button.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\button.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\button.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\core.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\core.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\core.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\core.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\cover.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\cover.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\cover.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\cover.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\dropdown.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\dropdown.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\dropdown.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\dropdown.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\grid.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\grid.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\grid.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\grid.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\modal.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\modal.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\modal.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\modal.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\nav.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\nav.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\nav.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\nav.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\offcanvas.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\offcanvas.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\offcanvas.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\offcanvas.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\scrollspy.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\scrollspy.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\scrollspy.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\scrollspy.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\smooth-scroll.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\smooth-scroll.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\smooth-scroll.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\smooth-scroll.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\switcher.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\switcher.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\switcher.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\switcher.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\tab.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\tab.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\tab.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\tab.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\toggle.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\toggle.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\toggle.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\toggle.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\touch.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\touch.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\touch.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\touch.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\utility.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\utility.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\utility.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\utility.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\bootstrap.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\bootstrap.css)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\main.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\main.css)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\portalDoLeite_uikit.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\portalDoLeite_uikit.css)
+
+Initial source changes: 
+	removed:Set()
+	added: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+
+Recompiling all 9 sources: invalidated sources (9) exceeded 50.0% of all sources
+Read from stdout: Compiling 9 Java sources to C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\test-classes...
+Compiling 9 Java sources to C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\test-classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1af68700 directly...
+Java compilation took 13.031552187 s
+Java analysis took 0.608764014 s
+Java compile + analysis took 13.735867677 s
+Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java...
+Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java...
+Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java)
+The C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java source file has the following regular definitions changed:
+	deveConseguirAdicionarTemas, notify, wait, DisciplinaTest, equals, deveConseguirAdicionarMetaDicas, notifyAll, <init>, toString, getClass, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java
+Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java...
+Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java...
+Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java)
+The C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java source file has the following regular definitions changed:
+	notify, setUp, wait, dao, equals, notifyAll, UsuarioTest, em, <init>, senhaDoUsuarioDeveEstarCriptografada, deveSalvarUsuarioNoBD, tearDown, toString, getClass, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java
+Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java...
+Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java...
+Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java)
+The C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java source file has the following regular definitions changed:
+	disciplina, notify, wait, tema, metadica1, equals, deveAdicionarComentariosDeDiscordantes, before, deveAdicionarMetaDica, notifyAll, deveIncrementarConcordanciasEDiscordancias, metadica2, <init>, deveIncrementarFlag, MetaDicaTest, toString, getClass, deveAdicionarDica, user, dica1, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java
+Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java...
+Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java...
+Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java)
+Including C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java by C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java
+Including C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java by C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java
+Including C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java by C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java
+Including C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java by C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java
+Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+The C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java source file has the following regular definitions changed:
+	notify, setUp, wait, equals, notifyAll, em, <init>, AbstractTest, tearDown, toString, getClass, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java
+Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java...
+Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java...
+Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java)
+The C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java source file has the following regular definitions changed:
+	notify, setUp, wait, dao, equals, result, deveNaoPermitirCadastroDeUsuariosComMesmoEmail, notifyAll, em, <init>, callLogin, RegistroTest, tearDown, toString, getClass, deveNaoPermitirCadastroDeUsuariosComMesmoLogin, deveRegistrarUser, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java
+Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java...
+Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java...
+Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+The C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java source file has the following regular definitions changed:
+	notify, setUp, wait, DicaDAOTest, dao, equals, result, deveCadastrarDica, notifyAll, em, <init>, tearDown, toString, getClass, deveIncrementarConcordancias, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java
+Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java...
+Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java...
+Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java)
+The C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java source file has the following regular definitions changed:
+	user1, disciplina, notify, deveCalcularCorretamenteMediaEMediana, wait, deveEstarAssociadaAUmaDisciplina, dica2, tema, equals, deveAdicionarDicas, before, dica3, notifyAll, <init>, user2, TemaTest, toString, getClass, user3, dica1, hashCode, deveSerPossivelReavaliarDificuldadeDoTema.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java
+Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java...
+Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java...
+Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java)
+The C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java source file has the following regular definitions changed:
+	disciplina, notify, wait, dica2, dica4, tema, equals, deveEstarAssociadoATema, before, dica3, notifyAll, deveRecuperarCorretamenteOConteudoDaDica, <init>, devePoderReceberFlags, devePoderReceberVotos, toString, DicaTest, getClass, deveSerDeUmaInstanciaEspecificaDeDica, user, deveArmazenarComentarioDeDiscordantes, dica1, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java
+Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java...
+Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java...
+Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java)
+The C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java source file has the following regular definitions changed:
+	notify, setUp, wait, deveFazerLogin, dao, equals, result, LoginTest, notifyAll, em, <init>, callLogin, tearDown, toString, getClass, deveFalharParaUsuarioInvalido, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'org.scalatest.tools.Framework' not present.
+Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
+Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+Subclass fingerprints: List((junit.framework.TestCase,false,sbt.SubclassFingerprintWrapper@13804bde), (org.specs2.specification.SpecificationStructure,false,sbt.SubclassFingerprintWrapper@47ee2300), (org.specs2.specification.SpecificationStructure,true,sbt.SubclassFingerprintWrapper@50c23d48), (org.specs2.runner.FilesRunner,false,sbt.SubclassFingerprintWrapper@524894db), (org.specs2.runner.FilesRunner,true,sbt.SubclassFingerprintWrapper@4307fbf7))
+Annotation fingerprints: List((org.junit.Test,false,sbt.AnnotatedFingerprintWrapper@22d6d92b), (org.junit.runner.RunWith,false,sbt.AnnotatedFingerprintWrapper@5ef246c5))
+Forking tests - parallelism = false
+Create a single-thread test executor
+Runner for sbt.FrameworkWrapper produced 8 initial tasks for 8 tests.
+  Running TaskDef(unidade.TemaTest, sbt.ForkMain$AnnotatedFingerscan@77a76216, false, [SuiteSelector])
+Test run started
+Test unidade.TemaTest.deveCalcularCorretamenteMediaEMediana started
+Test unidade.TemaTest.deveCalcularCorretamenteMediaEMediana finished
+Test unidade.TemaTest.deveSerPossivelReavaliarDificuldadeDoTema started
+Test unidade.TemaTest.deveSerPossivelReavaliarDificuldadeDoTema finished
+Test unidade.TemaTest.deveEstarAssociadaAUmaDisciplina started
+Test unidade.TemaTest.deveEstarAssociadaAUmaDisciplina finished
+Test unidade.TemaTest.deveAdicionarDicas started
+Test unidade.TemaTest.deveAdicionarDicas finished
+Test run finished: 0 failed, 0 ignored, 4 total, 3.727s
+    Produced 0 nested tasks and 4 events.
+Read from stdout: unidade.TemaTest
+unidade.TemaTest
+Read from stdout: + deveCalcularCorretamenteMediaEMediana
++ deveCalcularCorretamenteMediaEMediana
+Read from stdout: + deveSerPossivelReavaliarDificuldadeDoTema
++ deveSerPossivelReavaliarDificuldadeDoTema
+Read from stdout: + deveEstarAssociadaAUmaDisciplina
++ deveEstarAssociadaAUmaDisciplina
+Read from stdout: + deveAdicionarDicas
++ deveAdicionarDicas
+Read from stdout: 
+
+Read from stdout: 
+
+Read from stdout: Total for test unidade.TemaTest
+Total for test unidade.TemaTest
+Read from stdout: Finished in 0.093 seconds
+Finished in 0.093 seconds
+Read from stdout: 4 tests, 0 failures, 0 errors
+4 tests, 0 failures, 0 errors
+  Running TaskDef(RegistroTest, sbt.ForkMain$AnnotatedFingerscan@b7e155b, false, [SuiteSelector])
+Test run started
+Test RegistroTest.callLogin started
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+Test RegistroTest.callLogin finished
+Test RegistroTest.deveNaoPermitirCadastroDeUsuariosComMesmoEmail started
+[info] application - Aplica��o finalizando...
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+Test RegistroTest.deveNaoPermitirCadastroDeUsuariosComMesmoEmail finished
+Test RegistroTest.deveNaoPermitirCadastroDeUsuariosComMesmoLogin started
+[info] application - Aplica��o finalizando...
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+Test RegistroTest.deveNaoPermitirCadastroDeUsuariosComMesmoLogin finished
+Test RegistroTest.deveRegistrarUser started
+[info] application - Aplica��o finalizando...
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+Test RegistroTest.deveRegistrarUser finished
+Test run finished: 0 failed, 0 ignored, 4 total, 18.285s
+    Produced 0 nested tasks and 4 events.
+Read from stdout: RegistroTest
+RegistroTest
+Read from stdout: + callLogin
++ callLogin
+Read from stdout: + deveNaoPermitirCadastroDeUsuariosComMesmoEmail
++ deveNaoPermitirCadastroDeUsuariosComMesmoEmail
+Read from stdout: + deveNaoPermitirCadastroDeUsuariosComMesmoLogin
++ deveNaoPermitirCadastroDeUsuariosComMesmoLogin
+Read from stdout: + deveRegistrarUser
++ deveRegistrarUser
+Read from stdout: 
+
+Read from stdout: 
+
+Read from stdout: Total for test RegistroTest
+Total for test RegistroTest
+Read from stdout: Finished in 0.004 seconds
+Finished in 0.004 seconds
+Read from stdout: 4 tests, 0 failures, 0 errors
+4 tests, 0 failures, 0 errors
+  Running TaskDef(unidade.DisciplinaTest, sbt.ForkMain$AnnotatedFingerscan@27d5854, false, [SuiteSelector])
+Test run started
+Test unidade.DisciplinaTest.deveConseguirAdicionarMetaDicas started
+Test unidade.DisciplinaTest.deveConseguirAdicionarMetaDicas finished
+Test unidade.DisciplinaTest.deveConseguirAdicionarTemas started
+Test unidade.DisciplinaTest.deveConseguirAdicionarTemas finished
+Test run finished: 0 failed, 0 ignored, 2 total, 0.101s
+    Produced 0 nested tasks and 2 events.
+Read from stdout: unidade.DisciplinaTest
+unidade.DisciplinaTest
+Read from stdout: + deveConseguirAdicionarMetaDicas
++ deveConseguirAdicionarMetaDicas
+Read from stdout: + deveConseguirAdicionarTemas
++ deveConseguirAdicionarTemas
+Read from stdout: 
+
+Read from stdout: 
+
+Read from stdout: Total for test unidade.DisciplinaTest
+Total for test unidade.DisciplinaTest
+Read from stdout: Finished in 0.002 seconds
+Finished in 0.002 seconds
+Read from stdout: 2 tests, 0 failures, 0 errors
+2 tests, 0 failures, 0 errors
+  Running TaskDef(LoginTest, sbt.ForkMain$AnnotatedFingerscan@5a497574, false, [SuiteSelector])
+Test run started
+Test LoginTest.deveFazerLogin started
+[info] application - Aplica��o finalizando...
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+Test LoginTest.deveFazerLogin finished
+Test LoginTest.callLogin started
+[info] application - Aplica��o finalizando...
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+Test LoginTest.callLogin finished
+Test LoginTest.deveFalharParaUsuarioInvalido started
+[info] application - Aplica��o finalizando...
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+[debug] application - Usu�rio n�o cadastrado
+Test LoginTest.deveFalharParaUsuarioInvalido finished
+Test run finished: 0 failed, 0 ignored, 3 total, 3.769s
+    Produced 0 nested tasks and 3 events.
+Read from stdout: LoginTest
+LoginTest
+Read from stdout: + deveFazerLogin
++ deveFazerLogin
+Read from stdout: + callLogin
++ callLogin
+Read from stdout: + deveFalharParaUsuarioInvalido
++ deveFalharParaUsuarioInvalido
+Read from stdout: 
+
+Read from stdout: 
+
+Read from stdout: Total for test LoginTest
+Total for test LoginTest
+Read from stdout: Finished in 0.003 seconds
+Finished in 0.003 seconds
+Read from stdout: 3 tests, 0 failures, 0 errors
+3 tests, 0 failures, 0 errors
+  Running TaskDef(unidade.DicaTest, sbt.ForkMain$AnnotatedFingerscan@3a57ced1, false, [SuiteSelector])
+Test run started
+Test unidade.DicaTest.deveEstarAssociadoATema started
+Test unidade.DicaTest.deveEstarAssociadoATema finished
+Test unidade.DicaTest.devePoderReceberFlags started
+Test unidade.DicaTest.devePoderReceberFlags finished
+Test unidade.DicaTest.devePoderReceberVotos started
+Test unidade.DicaTest.devePoderReceberVotos finished
+Test unidade.DicaTest.deveSerDeUmaInstanciaEspecificaDeDica started
+Test unidade.DicaTest.deveSerDeUmaInstanciaEspecificaDeDica finished
+Test unidade.DicaTest.deveRecuperarCorretamenteOConteudoDaDica started
+Test unidade.DicaTest.deveRecuperarCorretamenteOConteudoDaDica finished
+Test unidade.DicaTest.deveArmazenarComentarioDeDiscordantes started
+Test unidade.DicaTest.deveArmazenarComentarioDeDiscordantes finished
+Test run finished: 0 failed, 0 ignored, 6 total, 1.62s
+    Produced 0 nested tasks and 6 events.
+Read from stdout: unidade.DicaTest
+unidade.DicaTest
+Read from stdout: + deveEstarAssociadoATema
++ deveEstarAssociadoATema
+Read from stdout: + devePoderReceberFlags
++ devePoderReceberFlags
+Read from stdout: + devePoderReceberVotos
++ devePoderReceberVotos
+Read from stdout: + deveSerDeUmaInstanciaEspecificaDeDica
++ deveSerDeUmaInstanciaEspecificaDeDica
+Read from stdout: + deveRecuperarCorretamenteOConteudoDaDica
++ deveRecuperarCorretamenteOConteudoDaDica
+Read from stdout: + deveArmazenarComentarioDeDiscordantes
++ deveArmazenarComentarioDeDiscordantes
+Read from stdout: 
+
+Read from stdout: 
+
+Read from stdout: Total for test unidade.DicaTest
+Total for test unidade.DicaTest
+Read from stdout: Finished in 0.011 seconds
+Finished in 0.011 seconds
+Read from stdout: 6 tests, 0 failures, 0 errors
+6 tests, 0 failures, 0 errors
+  Running TaskDef(UsuarioTest, sbt.ForkMain$AnnotatedFingerscan@122555e3, false, [SuiteSelector])
+Test run started
+Test UsuarioTest.senhaDoUsuarioDeveEstarCriptografada started
+[info] application - Aplica��o finalizando...
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+Test UsuarioTest.senhaDoUsuarioDeveEstarCriptografada finished
+Test UsuarioTest.deveSalvarUsuarioNoBD started
+[info] application - Aplica��o finalizando...
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+Test UsuarioTest.deveSalvarUsuarioNoBD finished
+Test run finished: 0 failed, 0 ignored, 2 total, 3.002s
+    Produced 0 nested tasks and 2 events.
+Read from stdout: UsuarioTest
+UsuarioTest
+Read from stdout: + senhaDoUsuarioDeveEstarCriptografada
++ senhaDoUsuarioDeveEstarCriptografada
+Read from stdout: + deveSalvarUsuarioNoBD
++ deveSalvarUsuarioNoBD
+Read from stdout: 
+
+Read from stdout: 
+
+Read from stdout: Total for test UsuarioTest
+Total for test UsuarioTest
+Read from stdout: Finished in 0.004 seconds
+Finished in 0.004 seconds
+Read from stdout: 2 tests, 0 failures, 0 errors
+2 tests, 0 failures, 0 errors
+  Running TaskDef(unidade.MetaDicaTest, sbt.ForkMain$AnnotatedFingerscan@3c5343bf, false, [SuiteSelector])
+Test run started
+Test unidade.MetaDicaTest.deveIncrementarFlag started
+Test unidade.MetaDicaTest.deveIncrementarFlag finished
+Test unidade.MetaDicaTest.deveAdicionarComentariosDeDiscordantes started
+Test unidade.MetaDicaTest.deveAdicionarComentariosDeDiscordantes finished
+Test unidade.MetaDicaTest.deveAdicionarMetaDica started
+Test unidade.MetaDicaTest.deveAdicionarMetaDica finished
+Test unidade.MetaDicaTest.deveIncrementarConcordanciasEDiscordancias started
+Test unidade.MetaDicaTest.deveIncrementarConcordanciasEDiscordancias finished
+Test unidade.MetaDicaTest.deveAdicionarDica started
+Test unidade.MetaDicaTest.deveAdicionarDica finished
+Test run finished: 0 failed, 0 ignored, 5 total, 1.221s
+    Produced 0 nested tasks and 5 events.
+Read from stdout: unidade.MetaDicaTest
+unidade.MetaDicaTest
+Read from stdout: + deveIncrementarFlag
++ deveIncrementarFlag
+Read from stdout: + deveAdicionarComentariosDeDiscordantes
++ deveAdicionarComentariosDeDiscordantes
+Read from stdout: + deveAdicionarMetaDica
++ deveAdicionarMetaDica
+Read from stdout: + deveIncrementarConcordanciasEDiscordancias
++ deveIncrementarConcordanciasEDiscordancias
+Read from stdout: + deveAdicionarDica
++ deveAdicionarDica
+Read from stdout: 
+
+Read from stdout: 
+
+Read from stdout: Total for test unidade.MetaDicaTest
+Total for test unidade.MetaDicaTest
+Read from stdout: Finished in 0.005 seconds
+Finished in 0.005 seconds
+Read from stdout: 5 tests, 0 failures, 0 errors
+5 tests, 0 failures, 0 errors
+  Running TaskDef(base.DicaDAOTest, sbt.ForkMain$AnnotatedFingerscan@2d5ef230, false, [SuiteSelector])
+Test run started
+Test base.DicaDAOTest.deveCadastrarDica started
+[info] application - Aplica��o finalizando...
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+Test base.DicaDAOTest.deveCadastrarDica finished
+Test base.DicaDAOTest.deveIncrementarConcordancias started
+[info] application - Aplica��o finalizando...
+[info] play - datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+[info] application - Aplica��o inicializada...
+Test base.DicaDAOTest.deveIncrementarConcordancias finished
+Test run finished: 0 failed, 0 ignored, 2 total, 0.889s
+    Produced 0 nested tasks and 2 events.
+Read from stdout: base.DicaDAOTest
+base.DicaDAOTest
+Read from stdout: + deveCadastrarDica
++ deveCadastrarDica
+Read from stdout: + deveIncrementarConcordancias
++ deveIncrementarConcordancias
+Read from stdout: 
+
+Read from stdout: 
+
+Read from stdout: Total for test base.DicaDAOTest
+Total for test base.DicaDAOTest
+Read from stdout: Finished in 0.002 seconds
+Finished in 0.002 seconds
+Read from stdout: 2 tests, 0 failures, 0 errors
+2 tests, 0 failures, 0 errors
+Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+Runner for sbt.FrameworkWrapper produced 0 initial tasks for 0 tests.
+Summary for JUnit not available.
+Summary for specs2 not available.
+Read from stdout: Passed: Total 28, Failed 0, Errors 0, Passed 28
+Passed: Total 28, Failed 0, Errors 0, Passed 28
+Passed tests:
+	unidade.DicaTest
+	unidade.DisciplinaTest
+	LoginTest
+	base.DicaDAOTest
+	UsuarioTest
+	unidade.TemaTest
+	RegistroTest
+	unidade.MetaDicaTest
+Total time: 52 s, completed 24/11/2015 10:04:17
+> server-post-command-cleanup
+> server-handle-next-server-request
+> eclipse
+About to create Eclipse project files for your project(s).
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@35c43769, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\application.conf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\application.conf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\routes,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\routes)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF\persistence.xml,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF\persistence.xml)
+Copy play resource mappings: 
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.eot,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.eot)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.ttf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.ttf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.woff,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.woff)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.woff2,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.woff2)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\FontAwesome.otf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\FontAwesome.otf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\images\favicon.png,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\images\favicon.png)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\images\logo.png,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\images\logo.png)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\angular.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\angular.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\jquery-1.9.0.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\jquery-1.9.0.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\main.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\main.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\uikit.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\uikit.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\uikit.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\uikit.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\accordion.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\accordion.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\accordion.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\accordion.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\autocomplete.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\autocomplete.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\autocomplete.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\autocomplete.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\datepicker.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\datepicker.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\datepicker.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\datepicker.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-password.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-password.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-password.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-password.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-select.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-select.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-select.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-select.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\grid.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\grid.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\grid.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\grid.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\htmleditor.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\htmleditor.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\htmleditor.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\htmleditor.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\lightbox.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\lightbox.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\lightbox.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\lightbox.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\nestable.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\nestable.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\nestable.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\nestable.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\notify.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\notify.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\notify.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\notify.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\pagination.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\pagination.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\pagination.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\pagination.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\search.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\search.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\search.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\search.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow-fx.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow-fx.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow-fx.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow-fx.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sortable.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sortable.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sortable.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sortable.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sticky.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sticky.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sticky.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sticky.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\timepicker.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\timepicker.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\timepicker.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\timepicker.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\tooltip.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\tooltip.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\tooltip.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\tooltip.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\upload.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\upload.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\upload.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\upload.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\alert.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\alert.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\alert.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\alert.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\button.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\button.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\button.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\button.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\core.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\core.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\core.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\core.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\cover.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\cover.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\cover.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\cover.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\dropdown.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\dropdown.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\dropdown.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\dropdown.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\grid.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\grid.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\grid.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\grid.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\modal.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\modal.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\modal.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\modal.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\nav.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\nav.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\nav.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\nav.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\offcanvas.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\offcanvas.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\offcanvas.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\offcanvas.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\scrollspy.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\scrollspy.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\scrollspy.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\scrollspy.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\smooth-scroll.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\smooth-scroll.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\smooth-scroll.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\smooth-scroll.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\switcher.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\switcher.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\switcher.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\switcher.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\tab.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\tab.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\tab.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\tab.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\toggle.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\toggle.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\toggle.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\toggle.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\touch.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\touch.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\touch.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\touch.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\utility.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\utility.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\utility.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\utility.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\bootstrap.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\bootstrap.css)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\main.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\main.css)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\portalDoLeite_uikit.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\portalDoLeite_uikit.css)
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@35c43769, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@35c43769, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@35c43769, check cycles: false
+External dependencies for configuration 'test' and withSource 'false': Success(List(Lib(C:\Users\Luiza\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.10\jars\play-java-jdbc_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-jdbc_2.10\jars\play-jdbc_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play_2.10\jars\play_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\sbt-link\jars\sbt-link-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.18.0-GA.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\templates_2.10\jars\templates_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.github.scala-incubator.io\scala-io-file_2.10\jars\scala-io-file_2.10-0.4.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.github.scala-incubator.io\scala-io-core_2.10\jars\scala-io-core_2.10-0.4.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.jsuereth\scala-arm_2.10\jars\scala-arm_2.10-1.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-iteratees_2.10\jars\play-iteratees_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.scala-stm\scala-stm_2.10\jars\scala-stm_2.10-0.7.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe\config\bundles\config-1.0.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-json_2.10\jars\play-json_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-functional_2.10\jars\play-functional_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-datacommons_2.10\jars\play-datacommons_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.3.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\jars\jackson-annotations-2.2.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\jars\jackson-core-2.2.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\jars\jackson-databind-2.2.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.10.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\io.netty\netty\bundles\netty-3.7.1.Final.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.5.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.5.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.5.jar), Lib(C:\Users\Luiza\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.0.13.jar), Lib(C:\Users\Luiza\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.0.13.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.2.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.10\bundles\akka-slf4j_2.10-2.2.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.7.18.jar), Lib(C:\Users\Luiza\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar), Lib(C:\Users\Luiza\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.google.guava\guava\bundles\guava-14.0.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.h2database\h2\jars\h2-1.3.172.jar), Lib(C:\Users\Luiza\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-java_2.10\jars\play-java_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.12.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.1.Final.jar), Lib(C:\Users\Luiza\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.1.1.GA.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-0.8.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.springframework\spring-context\jars\spring-context-3.2.3.RELEASE.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.springframework\spring-core\jars\spring-core-3.2.3.RELEASE.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-3.2.3.RELEASE.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar), Lib(C:\Users\Luiza\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\javax.servlet\javax.servlet-api\jars\javax.servlet-api-3.0.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-cache_2.10\jars\play-cache_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.6.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-java-jpa_2.10\jars\play-java-jpa_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.apache.directory.api\api-all\jars\api-all-1.0.0-M14.jar), Lib(C:\Users\Luiza\.ivy2\cache\xpp3\xpp3\jars\xpp3-1.1.4c.jar), Lib(C:\Users\Luiza\.ivy2\cache\commons-pool\commons-pool\jars\commons-pool-1.6.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.apache.mina\mina-core\bundles\mina-core-2.0.7.jar), Lib(C:\Users\Luiza\.ivy2\cache\commons-lang\commons-lang\jars\commons-lang-2.6.jar), Lib(C:\Users\Luiza\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.2.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\antlr\antlr\jars\antlr-2.7.7.jar), Lib(C:\Users\Luiza\.ivy2\cache\commons-io\commons-io\jars\commons-io-2.4.jar), Lib(C:\Users\Luiza\.ivy2\cache\postgresql\postgresql\jars\postgresql-9.1-901-1.jdbc4.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-4.2.3.Final.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.jboss.spec.javax.transaction\jboss-transaction-api_1.1_spec\jars\jboss-transaction-api_1.1_spec-1.0.1.Final.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.hibernate.common\hibernate-commons-annotations\jars\hibernate-commons-annotations-4.0.2.Final.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-4.2.3.Final.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-test_2.10\jars\play-test_2.10-2.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\junit\junit\jars\junit-4.11.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.hamcrest\hamcrest-core\jars\hamcrest-core-1.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.specs2\specs2_2.10\jars\specs2_2.10-2.1.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.scalaz\scalaz-core_2.10\bundles\scalaz-core_2.10-7.0.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.scalaz\scalaz-concurrent_2.10\bundles\scalaz-concurrent_2.10-7.0.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.scalaz\scalaz-effect_2.10\bundles\scalaz-effect_2.10-7.0.2.jar), Lib(C:\Users\Luiza\.ivy2\cache\com.novocode\junit-interface\jars\junit-interface-0.10.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.scala-tools.testing\test-interface\jars\test-interface-0.5.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.fluentlenium\fluentlenium-festassert\jars\fluentlenium-festassert-0.8.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.fluentlenium\fluentlenium-core\jars\fluentlenium-core-0.8.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-java\jars\selenium-java-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-android-driver\jars\selenium-android-driver-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-remote-driver\jars\selenium-remote-driver-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\cglib\cglib-nodep\jars\cglib-nodep-2.1_3.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.json\json\jars\json-20080701.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-api\jars\selenium-api-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.2.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.2.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.6.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.apache.commons\commons-exec\jars\commons-exec-1.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\net.java.dev.jna\jna\jars\jna-3.4.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\net.java.dev.jna\platform\jars\platform-3.4.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-chrome-driver\jars\selenium-chrome-driver-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-htmlunit-driver\jars\selenium-htmlunit-driver-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\net.sourceforge.htmlunit\htmlunit\jars\htmlunit-2.12.jar), Lib(C:\Users\Luiza\.ivy2\cache\xalan\xalan\jars\xalan-2.7.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\xalan\serializer\jars\serializer-2.7.1.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.apache.httpcomponents\httpmime\jars\httpmime-4.2.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\net.sourceforge.htmlunit\htmlunit-core-js\jars\htmlunit-core-js-2.12.jar), Lib(C:\Users\Luiza\.ivy2\cache\net.sourceforge.nekohtml\nekohtml\jars\nekohtml-1.9.18.jar), Lib(C:\Users\Luiza\.ivy2\cache\net.sourceforge.cssparser\cssparser\jars\cssparser-0.9.9.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.w3c.css\sac\jars\sac-1.3.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.eclipse.jetty\jetty-websocket\jars\jetty-websocket-8.1.9.v20130131.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.eclipse.jetty\jetty-util\jars\jetty-util-8.1.9.v20130131.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.eclipse.jetty\jetty-io\jars\jetty-io-8.1.9.v20130131.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.eclipse.jetty\jetty-http\jars\jetty-http-8.1.9.v20130131.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-firefox-driver\jars\selenium-firefox-driver-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-ie-driver\jars\selenium-ie-driver-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-iphone-driver\jars\selenium-iphone-driver-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-safari-driver\jars\selenium-safari-driver-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.webbitserver\webbit\jars\webbit-0.4.14.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.seleniumhq.selenium\selenium-support\jars\selenium-support-2.32.0.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.easytesting\fest-assert\jars\fest-assert-1.4.jar), Lib(C:\Users\Luiza\.ivy2\cache\org.easytesting\fest-util\jars\fest-util-1.1.6.jar)))
+Project dependencies for configuration 'compile': Success(List())
+Project dependencies for configuration 'test': Success(List())
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@35c43769, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@35c43769, check cycles: false
+Successfully created Eclipse project files for project(s):
+PortalDoLeite
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@120b44bd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\application.conf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\application.conf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\routes,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\routes)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF\persistence.xml,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF\persistence.xml)
+Copy play resource mappings: 
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.eot,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.eot)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.ttf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.ttf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.woff,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.woff)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.woff2,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.woff2)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\FontAwesome.otf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\FontAwesome.otf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\images\favicon.png,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\images\favicon.png)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\images\logo.png,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\images\logo.png)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\angular.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\angular.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\jquery-1.9.0.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\jquery-1.9.0.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\main.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\main.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\uikit.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\uikit.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\uikit.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\uikit.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\accordion.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\accordion.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\accordion.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\accordion.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\autocomplete.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\autocomplete.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\autocomplete.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\autocomplete.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\datepicker.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\datepicker.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\datepicker.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\datepicker.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-password.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-password.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-password.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-password.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-select.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-select.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-select.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-select.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\grid.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\grid.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\grid.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\grid.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\htmleditor.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\htmleditor.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\htmleditor.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\htmleditor.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\lightbox.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\lightbox.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\lightbox.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\lightbox.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\nestable.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\nestable.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\nestable.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\nestable.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\notify.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\notify.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\notify.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\notify.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\pagination.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\pagination.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\pagination.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\pagination.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\search.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\search.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\search.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\search.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow-fx.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow-fx.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow-fx.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow-fx.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sortable.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sortable.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sortable.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sortable.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sticky.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sticky.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sticky.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sticky.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\timepicker.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\timepicker.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\timepicker.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\timepicker.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\tooltip.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\tooltip.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\tooltip.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\tooltip.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\upload.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\upload.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\upload.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\upload.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\alert.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\alert.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\alert.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\alert.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\button.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\button.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\button.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\button.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\core.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\core.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\core.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\core.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\cover.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\cover.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\cover.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\cover.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\dropdown.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\dropdown.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\dropdown.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\dropdown.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\grid.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\grid.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\grid.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\grid.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\modal.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\modal.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\modal.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\modal.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\nav.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\nav.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\nav.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\nav.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\offcanvas.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\offcanvas.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\offcanvas.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\offcanvas.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\scrollspy.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\scrollspy.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\scrollspy.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\scrollspy.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\smooth-scroll.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\smooth-scroll.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\smooth-scroll.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\smooth-scroll.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\switcher.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\switcher.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\switcher.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\switcher.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\tab.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\tab.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\tab.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\tab.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\toggle.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\toggle.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\toggle.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\toggle.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\touch.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\touch.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\touch.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\touch.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\utility.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\utility.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\utility.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\utility.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\bootstrap.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\bootstrap.css)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\main.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\main.css)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\portalDoLeite_uikit.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\portalDoLeite_uikit.css)
+Total time: 2 s, completed 24/11/2015 10:04:32
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 15192
+This application is already running (Or delete C:\Users\Luiza\Documents\portaldoleite-master\RUNNING_PID file).
+Exception in thread "sbt-bg-threads-3" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@6132a78c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\application.conf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\application.conf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\routes,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\routes)
+	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF\persistence.xml,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF\persistence.xml)
+Copy play resource mappings: 
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.eot,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.eot)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.ttf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.ttf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.woff,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.woff)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\fontawesome-webfont.woff2,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\fontawesome-webfont.woff2)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\fonts\FontAwesome.otf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\fonts\FontAwesome.otf)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\images\favicon.png,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\images\favicon.png)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\images\logo.png,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\images\logo.png)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\angular.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\angular.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\jquery-1.9.0.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\jquery-1.9.0.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\main.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\main.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\uikit.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\uikit.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\uikit.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\uikit.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\accordion.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\accordion.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\accordion.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\accordion.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\autocomplete.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\autocomplete.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\autocomplete.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\autocomplete.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\datepicker.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\datepicker.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\datepicker.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\datepicker.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-password.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-password.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-password.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-password.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-select.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-select.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\form-select.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\form-select.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\grid.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\grid.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\grid.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\grid.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\htmleditor.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\htmleditor.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\htmleditor.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\htmleditor.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\lightbox.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\lightbox.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\lightbox.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\lightbox.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\nestable.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\nestable.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\nestable.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\nestable.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\notify.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\notify.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\notify.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\notify.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\pagination.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\pagination.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\pagination.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\pagination.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\search.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\search.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\search.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\search.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow-fx.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow-fx.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow-fx.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow-fx.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\slideshow.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\slideshow.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sortable.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sortable.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sortable.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sortable.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sticky.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sticky.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\sticky.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\sticky.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\timepicker.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\timepicker.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\timepicker.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\timepicker.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\tooltip.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\tooltip.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\tooltip.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\tooltip.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\upload.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\upload.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\components\upload.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\components\upload.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\alert.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\alert.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\alert.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\alert.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\button.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\button.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\button.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\button.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\core.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\core.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\core.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\core.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\cover.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\cover.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\cover.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\cover.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\dropdown.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\dropdown.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\dropdown.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\dropdown.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\grid.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\grid.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\grid.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\grid.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\modal.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\modal.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\modal.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\modal.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\nav.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\nav.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\nav.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\nav.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\offcanvas.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\offcanvas.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\offcanvas.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\offcanvas.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\scrollspy.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\scrollspy.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\scrollspy.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\scrollspy.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\smooth-scroll.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\smooth-scroll.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\smooth-scroll.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\smooth-scroll.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\switcher.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\switcher.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\switcher.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\switcher.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\tab.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\tab.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\tab.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\tab.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\toggle.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\toggle.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\toggle.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\toggle.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\touch.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\touch.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\touch.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\touch.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\utility.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\utility.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\javascripts\core\utility.min.js,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\javascripts\core\utility.min.js)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\bootstrap.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\bootstrap.css)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\main.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\main.css)
+	(C:\Users\Luiza\Documents\portaldoleite-master\public\stylesheets\portalDoLeite_uikit.css,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\public\stylesheets\portalDoLeite_uikit.css)
+Total time: 2 s, completed 24/11/2015 10:12:28
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 15192
+This application is already running (Or delete C:\Users\Luiza\Documents\portaldoleite-master\RUNNING_PID file).
+Exception in thread "sbt-bg-threads-5" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 15192@Cassandra logs at Tue Nov 24 10:13:11 BRST 2015, goodbye.

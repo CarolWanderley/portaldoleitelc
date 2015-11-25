@@ -1,0 +1,107 @@
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+[debug] 	modified: Set()
+[debug] Removed products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated sources: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated sources: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+[debug] Recompiling all 9 sources: invalidated sources (9) exceeded 50.0% of all sources
+[info] Compiling 9 Java sources to C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\test-classes...
+[debug] Attempting to call com.sun.tools.javac.api.JavacTool@1af68700 directly...
+[debug] Java compilation took 13.031552187 s
+[debug] Java analysis took 0.608764014 s
+[debug] Java compile + analysis took 13.735867677 s
+[debug] Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java...
+[debug] Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java...
+[debug] Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java)
+[debug] Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java)
+[debug] The C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java source file has the following regular definitions changed:
+[debug] 	deveConseguirAdicionarTemas, notify, wait, DisciplinaTest, equals, deveConseguirAdicionarMetaDicas, notifyAll, <init>, toString, getClass, hashCode.
+[debug] All member reference dependencies will be considered within this context.
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DisciplinaTest.java
+[debug] Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java...
+[debug] Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java...
+[debug] Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java)
+[debug] Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java)
+[debug] The C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java source file has the following regular definitions changed:
+[debug] 	notify, setUp, wait, dao, equals, notifyAll, UsuarioTest, em, <init>, senhaDoUsuarioDeveEstarCriptografada, deveSalvarUsuarioNoBD, tearDown, toString, getClass, hashCode.
+[debug] All member reference dependencies will be considered within this context.
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java
+[debug] Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java...
+[debug] Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java...
+[debug] Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java)
+[debug] Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java)
+[debug] The C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java source file has the following regular definitions changed:
+[debug] 	disciplina, notify, wait, tema, metadica1, equals, deveAdicionarComentariosDeDiscordantes, before, deveAdicionarMetaDica, notifyAll, deveIncrementarConcordanciasEDiscordancias, metadica2, <init>, deveIncrementarFlag, MetaDicaTest, toString, getClass, deveAdicionarDica, user, dica1, hashCode.
+[debug] All member reference dependencies will be considered within this context.
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\MetaDicaTest.java
+[debug] Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java...
+[debug] Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java...
+[debug] Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java)
+[debug] Including C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java by C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java
+[debug] Including C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java by C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java
+[debug] Including C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java by C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java
+[debug] Including C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java by C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java
+[debug] Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java, C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+[debug] The C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java source file has the following regular definitions changed:
+[debug] 	notify, setUp, wait, equals, notifyAll, em, <init>, AbstractTest, tearDown, toString, getClass, hashCode.
+[debug] All member reference dependencies will be considered within this context.
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\base\AbstractTest.java
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\UsuarioTest.java
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java
+[debug] Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java...
+[debug] Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java...
+[debug] Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java)
+[debug] Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java)
+[debug] The C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java source file has the following regular definitions changed:
+[debug] 	notify, setUp, wait, dao, equals, result, deveNaoPermitirCadastroDeUsuariosComMesmoEmail, notifyAll, em, <init>, callLogin, RegistroTest, tearDown, toString, getClass, deveNaoPermitirCadastroDeUsuariosComMesmoLogin, deveRegistrarUser, hashCode.
+[debug] All member reference dependencies will be considered within this context.
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\RegistroTest.java
+[debug] Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java...
+[debug] Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java...
+[debug] Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+[debug] Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java)
+[debug] The C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java source file has the following regular definitions changed:
+[debug] 	notify, setUp, wait, DicaDAOTest, dao, equals, result, deveCadastrarDica, notifyAll, em, <init>, tearDown, toString, getClass, deveIncrementarConcordancias, hashCode.
+[debug] All member reference dependencies will be considered within this context.
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\base\DicaDAOTest.java
+[debug] Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java...
+[debug] Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java...
+[debug] Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java)
+[debug] Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java)
+[debug] The C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java source file has the following regular definitions changed:
+[debug] 	user1, disciplina, notify, deveCalcularCorretamenteMediaEMediana, wait, deveEstarAssociadaAUmaDisciplina, dica2, tema, equals, deveAdicionarDicas, before, dica3, notifyAll, <init>, user2, TemaTest, toString, getClass, user3, dica1, hashCode, deveSerPossivelReavaliarDificuldadeDoTema.
+[debug] All member reference dependencies will be considered within this context.
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\TemaTest.java
+[debug] Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java...
+[debug] Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java...
+[debug] Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java)
+[debug] Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java)
+[debug] The C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java source file has the following regular definitions changed:
+[debug] 	disciplina, notify, wait, dica2, dica4, tema, equals, deveEstarAssociadoATema, before, dica3, notifyAll, deveRecuperarCorretamenteOConteudoDaDica, <init>, devePoderReceberFlags, devePoderReceberVotos, toString, DicaTest, getClass, deveSerDeUmaInstanciaEspecificaDeDica, user, deveArmazenarComentarioDeDiscordantes, dica1, hashCode.
+[debug] All member reference dependencies will be considered within this context.
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\unidade\DicaTest.java
+[debug] Invalidating C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java...
+[debug] Invalidating (transitively) by inheritance from C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java...
+[debug] Initial set of included nodes: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java)
+[debug] Invalidated by transitive inheritance dependency: Set(C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java)
+[debug] The C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java source file has the following regular definitions changed:
+[debug] 	notify, setUp, wait, deveFazerLogin, dao, equals, result, LoginTest, notifyAll, em, <init>, callLogin, tearDown, toString, getClass, deveFalharParaUsuarioInvalido, hashCode.
+[debug] All member reference dependencies will be considered within this context.
+[debug] Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Luiza\Documents\portaldoleite-master\test\LoginTest.java
+[debug] New invalidations:
+[debug] 	Set()
+[debug] Initial set of included nodes: Set()
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] 	Set()
+[debug] All newly invalidated sources after taking into account (previously) recompiled sources:Set()

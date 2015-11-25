@@ -1,0 +1,76 @@
+[info] unidade.TemaTest
+[info] + deveCalcularCorretamenteMediaEMediana
+[info] + deveSerPossivelReavaliarDificuldadeDoTema
+[info] + deveEstarAssociadaAUmaDisciplina
+[info] + deveAdicionarDicas
+[info] 
+[info] 
+[info] Total for test unidade.TemaTest
+[info] Finished in 0.093 seconds
+[info] 4 tests, 0 failures, 0 errors
+[info] RegistroTest
+[info] + callLogin
+[info] + deveNaoPermitirCadastroDeUsuariosComMesmoEmail
+[info] + deveNaoPermitirCadastroDeUsuariosComMesmoLogin
+[info] + deveRegistrarUser
+[info] 
+[info] 
+[info] Total for test RegistroTest
+[info] Finished in 0.004 seconds
+[info] 4 tests, 0 failures, 0 errors
+[info] unidade.DisciplinaTest
+[info] + deveConseguirAdicionarMetaDicas
+[info] + deveConseguirAdicionarTemas
+[info] 
+[info] 
+[info] Total for test unidade.DisciplinaTest
+[info] Finished in 0.002 seconds
+[info] 2 tests, 0 failures, 0 errors
+[info] LoginTest
+[info] + deveFazerLogin
+[info] + callLogin
+[info] + deveFalharParaUsuarioInvalido
+[info] 
+[info] 
+[info] Total for test LoginTest
+[info] Finished in 0.003 seconds
+[info] 3 tests, 0 failures, 0 errors
+[info] unidade.DicaTest
+[info] + deveEstarAssociadoATema
+[info] + devePoderReceberFlags
+[info] + devePoderReceberVotos
+[info] + deveSerDeUmaInstanciaEspecificaDeDica
+[info] + deveRecuperarCorretamenteOConteudoDaDica
+[info] + deveArmazenarComentarioDeDiscordantes
+[info] 
+[info] 
+[info] Total for test unidade.DicaTest
+[info] Finished in 0.011 seconds
+[info] 6 tests, 0 failures, 0 errors
+[info] UsuarioTest
+[info] + senhaDoUsuarioDeveEstarCriptografada
+[info] + deveSalvarUsuarioNoBD
+[info] 
+[info] 
+[info] Total for test UsuarioTest
+[info] Finished in 0.004 seconds
+[info] 2 tests, 0 failures, 0 errors
+[info] unidade.MetaDicaTest
+[info] + deveIncrementarFlag
+[info] + deveAdicionarComentariosDeDiscordantes
+[info] + deveAdicionarMetaDica
+[info] + deveIncrementarConcordanciasEDiscordancias
+[info] + deveAdicionarDica
+[info] 
+[info] 
+[info] Total for test unidade.MetaDicaTest
+[info] Finished in 0.005 seconds
+[info] 5 tests, 0 failures, 0 errors
+[info] base.DicaDAOTest
+[info] + deveCadastrarDica
+[info] + deveIncrementarConcordancias
+[info] 
+[info] 
+[info] Total for test base.DicaDAOTest
+[info] Finished in 0.002 seconds
+[info] 2 tests, 0 failures, 0 errors

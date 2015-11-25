@@ -1,0 +1,27 @@
+New log file opened at Tue Nov 24 10:16:08 BRST 2015 by 15260@Cassandra
+Sending msg to client activator-e90c2360-42b3-4d1b-845d-9fb20203324d: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: C:\Users\Luiza\Documents\portaldoleite-master\.sbtserver\connections\master.log))
+Sending msg to client activator-e90c2360-42b3-4d1b-845d-9fb20203324d: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\Luiza\Documents\portaldoleite-master\.sbtserver\master.log))
+Sending msg to client activator-e90c2360-42b3-4d1b-845d-9fb20203324d: DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\Luiza\Documents\portaldoleite-master\.sbtserver\connections\activator-e90c2360-42b3-4d1b-845d-9fb20203324d.log))
+Reading next message from client.
+Got request: ListenToEvents()
+Reading next message from client.
+Got request: ExecutionRequest(compile)
+Reading next message from client.
+Got request: ListenToBuildChange()
+Reading next message from client.
+Got request: SendSyntheticBuildChanged()
+Reading next message from client.
+Got request: KeyLookupRequest(discoveredMainClasses)
+Reading next message from client.
+Sending msg to client activator-e90c2360-42b3-4d1b-845d-9fb20203324d: (4,ReceivedResponse())
+Got request: KeyLookupRequest(mainClass)
+Reading next message from client.
+Got request: UnlistenToEvents()
+Reading next message from client.
+Got request: UnlistenToBuildChange()
+Reading next message from client.
+Client activator-e90c2360-42b3-4d1b-845d-9fb20203324d EOF, shutting down.
+Stopping client.
+Client activator-e90c2360-42b3-4d1b-845d-9fb20203324d thread exiting.
+Dropping message (9,ReceivedResponse()) to dead client activator-e90c2360-42b3-4d1b-845d-9fb20203324d
+Dropping message (0,ReceivedResponse()) to dead client activator-e90c2360-42b3-4d1b-845d-9fb20203324d

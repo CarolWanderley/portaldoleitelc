@@ -1,0 +1,105 @@
+[debug] Forking tests - parallelism = false
+[debug] Create a single-thread test executor
+[debug] Runner for sbt.FrameworkWrapper produced 8 initial tasks for 8 tests.
+[debug]   Running TaskDef(unidade.TemaTest, sbt.ForkMain$AnnotatedFingerscan@77a76216, false, [SuiteSelector])
+[debug] Test run started
+[debug] Test unidade.TemaTest.deveCalcularCorretamenteMediaEMediana started
+[debug] Test unidade.TemaTest.deveCalcularCorretamenteMediaEMediana finished
+[debug] Test unidade.TemaTest.deveSerPossivelReavaliarDificuldadeDoTema started
+[debug] Test unidade.TemaTest.deveSerPossivelReavaliarDificuldadeDoTema finished
+[debug] Test unidade.TemaTest.deveEstarAssociadaAUmaDisciplina started
+[debug] Test unidade.TemaTest.deveEstarAssociadaAUmaDisciplina finished
+[debug] Test unidade.TemaTest.deveAdicionarDicas started
+[debug] Test unidade.TemaTest.deveAdicionarDicas finished
+[debug] Test run finished: 0 failed, 0 ignored, 4 total, 3.727s
+[debug]     Produced 0 nested tasks and 4 events.
+[debug]   Running TaskDef(RegistroTest, sbt.ForkMain$AnnotatedFingerscan@b7e155b, false, [SuiteSelector])
+[debug] Test run started
+[debug] Test RegistroTest.callLogin started
+[debug] Test RegistroTest.callLogin finished
+[debug] Test RegistroTest.deveNaoPermitirCadastroDeUsuariosComMesmoEmail started
+[debug] Test RegistroTest.deveNaoPermitirCadastroDeUsuariosComMesmoEmail finished
+[debug] Test RegistroTest.deveNaoPermitirCadastroDeUsuariosComMesmoLogin started
+[debug] Test RegistroTest.deveNaoPermitirCadastroDeUsuariosComMesmoLogin finished
+[debug] Test RegistroTest.deveRegistrarUser started
+[debug] Test RegistroTest.deveRegistrarUser finished
+[debug] Test run finished: 0 failed, 0 ignored, 4 total, 18.285s
+[debug]     Produced 0 nested tasks and 4 events.
+[debug]   Running TaskDef(unidade.DisciplinaTest, sbt.ForkMain$AnnotatedFingerscan@27d5854, false, [SuiteSelector])
+[debug] Test run started
+[debug] Test unidade.DisciplinaTest.deveConseguirAdicionarMetaDicas started
+[debug] Test unidade.DisciplinaTest.deveConseguirAdicionarMetaDicas finished
+[debug] Test unidade.DisciplinaTest.deveConseguirAdicionarTemas started
+[debug] Test unidade.DisciplinaTest.deveConseguirAdicionarTemas finished
+[debug] Test run finished: 0 failed, 0 ignored, 2 total, 0.101s
+[debug]     Produced 0 nested tasks and 2 events.
+[debug]   Running TaskDef(LoginTest, sbt.ForkMain$AnnotatedFingerscan@5a497574, false, [SuiteSelector])
+[debug] Test run started
+[debug] Test LoginTest.deveFazerLogin started
+[debug] Test LoginTest.deveFazerLogin finished
+[debug] Test LoginTest.callLogin started
+[debug] Test LoginTest.callLogin finished
+[debug] Test LoginTest.deveFalharParaUsuarioInvalido started
+[debug] Test LoginTest.deveFalharParaUsuarioInvalido finished
+[debug] Test run finished: 0 failed, 0 ignored, 3 total, 3.769s
+[debug]     Produced 0 nested tasks and 3 events.
+[debug]   Running TaskDef(unidade.DicaTest, sbt.ForkMain$AnnotatedFingerscan@3a57ced1, false, [SuiteSelector])
+[debug] Test run started
+[debug] Test unidade.DicaTest.deveEstarAssociadoATema started
+[debug] Test unidade.DicaTest.deveEstarAssociadoATema finished
+[debug] Test unidade.DicaTest.devePoderReceberFlags started
+[debug] Test unidade.DicaTest.devePoderReceberFlags finished
+[debug] Test unidade.DicaTest.devePoderReceberVotos started
+[debug] Test unidade.DicaTest.devePoderReceberVotos finished
+[debug] Test unidade.DicaTest.deveSerDeUmaInstanciaEspecificaDeDica started
+[debug] Test unidade.DicaTest.deveSerDeUmaInstanciaEspecificaDeDica finished
+[debug] Test unidade.DicaTest.deveRecuperarCorretamenteOConteudoDaDica started
+[debug] Test unidade.DicaTest.deveRecuperarCorretamenteOConteudoDaDica finished
+[debug] Test unidade.DicaTest.deveArmazenarComentarioDeDiscordantes started
+[debug] Test unidade.DicaTest.deveArmazenarComentarioDeDiscordantes finished
+[debug] Test run finished: 0 failed, 0 ignored, 6 total, 1.62s
+[debug]     Produced 0 nested tasks and 6 events.
+[debug]   Running TaskDef(UsuarioTest, sbt.ForkMain$AnnotatedFingerscan@122555e3, false, [SuiteSelector])
+[debug] Test run started
+[debug] Test UsuarioTest.senhaDoUsuarioDeveEstarCriptografada started
+[debug] Test UsuarioTest.senhaDoUsuarioDeveEstarCriptografada finished
+[debug] Test UsuarioTest.deveSalvarUsuarioNoBD started
+[debug] Test UsuarioTest.deveSalvarUsuarioNoBD finished
+[debug] Test run finished: 0 failed, 0 ignored, 2 total, 3.002s
+[debug]     Produced 0 nested tasks and 2 events.
+[debug]   Running TaskDef(unidade.MetaDicaTest, sbt.ForkMain$AnnotatedFingerscan@3c5343bf, false, [SuiteSelector])
+[debug] Test run started
+[debug] Test unidade.MetaDicaTest.deveIncrementarFlag started
+[debug] Test unidade.MetaDicaTest.deveIncrementarFlag finished
+[debug] Test unidade.MetaDicaTest.deveAdicionarComentariosDeDiscordantes started
+[debug] Test unidade.MetaDicaTest.deveAdicionarComentariosDeDiscordantes finished
+[debug] Test unidade.MetaDicaTest.deveAdicionarMetaDica started
+[debug] Test unidade.MetaDicaTest.deveAdicionarMetaDica finished
+[debug] Test unidade.MetaDicaTest.deveIncrementarConcordanciasEDiscordancias started
+[debug] Test unidade.MetaDicaTest.deveIncrementarConcordanciasEDiscordancias finished
+[debug] Test unidade.MetaDicaTest.deveAdicionarDica started
+[debug] Test unidade.MetaDicaTest.deveAdicionarDica finished
+[debug] Test run finished: 0 failed, 0 ignored, 5 total, 1.221s
+[debug]     Produced 0 nested tasks and 5 events.
+[debug]   Running TaskDef(base.DicaDAOTest, sbt.ForkMain$AnnotatedFingerscan@2d5ef230, false, [SuiteSelector])
+[debug] Test run started
+[debug] Test base.DicaDAOTest.deveCadastrarDica started
+[debug] Test base.DicaDAOTest.deveCadastrarDica finished
+[debug] Test base.DicaDAOTest.deveIncrementarConcordancias started
+[debug] Test base.DicaDAOTest.deveIncrementarConcordancias finished
+[debug] Test run finished: 0 failed, 0 ignored, 2 total, 0.889s
+[debug]     Produced 0 nested tasks and 2 events.
+[debug] Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+[debug] Runner for sbt.FrameworkWrapper produced 0 initial tasks for 0 tests.
+[debug] Summary for JUnit not available.
+[debug] Summary for specs2 not available.
+[info] Passed: Total 28, Failed 0, Errors 0, Passed 28
+[debug] Passed tests:
+[debug] 	unidade.DicaTest
+[debug] 	unidade.DisciplinaTest
+[debug] 	LoginTest
+[debug] 	base.DicaDAOTest
+[debug] 	UsuarioTest
+[debug] 	unidade.TemaTest
+[debug] 	RegistroTest
+[debug] 	unidade.MetaDicaTest

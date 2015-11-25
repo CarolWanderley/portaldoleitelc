@@ -1,0 +1,22 @@
+New log file opened at Tue Nov 24 10:20:47 BRST 2015 by 15260@Cassandra
+Sending msg to client activator-c0404f04-27ee-4333-a28b-6c8b4b26cc23: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: C:\Users\Luiza\Documents\portaldoleite-master\.sbtserver\connections\master.log))
+Sending msg to client activator-c0404f04-27ee-4333-a28b-6c8b4b26cc23: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\Luiza\Documents\portaldoleite-master\.sbtserver\master.log))
+Sending msg to client activator-c0404f04-27ee-4333-a28b-6c8b4b26cc23: DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\Luiza\Documents\portaldoleite-master\.sbtserver\connections\activator-c0404f04-27ee-4333-a28b-6c8b4b26cc23.log))
+Reading next message from client.
+Got request: ListenToEvents()
+Reading next message from client.
+Got request: ListenToBuildChange()
+Reading next message from client.
+Got request: SendSyntheticBuildChanged()
+Reading next message from client.
+Got request: KeyLookupRequest(discoveredMainClasses)
+Reading next message from client.
+Got request: KeyLookupRequest(mainClass)
+Reading next message from client.
+Sending msg to client activator-c0404f04-27ee-4333-a28b-6c8b4b26cc23: (3,ReceivedResponse())
+Got request: ExecutionRequest(compile)
+Reading next message from client.
+Client activator-c0404f04-27ee-4333-a28b-6c8b4b26cc23 closed, java.net.SocketException: Connection reset, shutting down
+Stopping client.
+Client activator-c0404f04-27ee-4333-a28b-6c8b4b26cc23 thread exiting.
+Dropping message (0,ReceivedResponse()) to dead client activator-c0404f04-27ee-4333-a28b-6c8b4b26cc23
