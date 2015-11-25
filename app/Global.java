@@ -40,9 +40,9 @@ public class Global extends GlobalSettings {
 				if(dao.findAllByClassName(User.class.getName()).size() == 0){
 					criaUsuarios();
 				}
-				if(dao.findAllByClassName(Dica.class.getName()).size() == 0){
-					criaDicas();
-				}
+//				if(dao.findAllByClassName(Dica.class.getName()).size() == 0){
+//					criaDicas();
+//				}
 			}
 		});
 	}
@@ -55,7 +55,7 @@ public class Global extends GlobalSettings {
 	        Logger.info("Aplicação finalizando...");
 	        disciplinas = dao.findAllByClassName("Disciplina");
 	        usuarios = dao.findAllByClassName("User");
-	        dicas = dao.findAllByClassName("Dica");
+//	        dicas = dao.findAllByClassName("Dica");
 	        
 	        for (Disciplina disciplina: disciplinas) {
 	        dao.removeById(Disciplina.class, disciplina.getId());
@@ -63,9 +63,9 @@ public class Global extends GlobalSettings {
 	        for (User u: usuarios) {
 		        dao.removeById(User.class, u.getId());
 		       } 
-	        for (Dica d: dicas) {
-		        dao.removeById(User.class, d.getId());
-		       } 
+//	        for (Dica d: dicas) {
+//		        dao.removeById(User.class, d.getId());
+//		       } 
 	    }}); 
 	}
 	
