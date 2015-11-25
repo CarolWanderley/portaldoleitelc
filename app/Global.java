@@ -37,7 +37,7 @@ public class Global extends GlobalSettings {
 				if(dao.findAllByClassName(Disciplina.class.getName()).size() == 0){
 					criaDisciplinaTemas();
 				}
-				if(dao.findAllByClassName(User.class.getName()).size() == 1){
+				if(dao.findAllByClassName(User.class.getName()).size() == 0){
 					criaUsuarios();
 				}
 				if(dao.findAllByClassName(Dica.class.getName()).size() == 0){
