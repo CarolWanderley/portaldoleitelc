@@ -28,7 +28,7 @@ public abstract class Dica implements Comparable<Dica>{
 	
 	@ManyToOne
 	private Tema tema;
-	
+
 	@Column
 	private String username;
 	
@@ -58,6 +58,7 @@ public abstract class Dica implements Comparable<Dica>{
 	
 	@Transient
 	private DicaDisciplina instanciaDisciplina;
+	
 	
 	public Dica(){
 		this.metadicas = new ArrayList<MetaDica>();
@@ -150,13 +151,8 @@ public abstract class Dica implements Comparable<Dica>{
 	 */
 	@Override
 	public int compareTo(Dica otherDica) {
-		if (this.getConcordancias()>otherDica.getConcordancias()) {
-			return -1;
-		} else if (this.getConcordancias()<otherDica.getConcordancias()) {
-			return 1;
-		} else {
-			return 0;
-		}
+		ComparaConcordancia comp = new ComparaConcordancia();
+		return comp.comparador(this, otherDica);
 	}
 	
 	public void checaTipoDica() {
@@ -190,4 +186,6 @@ public abstract class Dica implements Comparable<Dica>{
 	}
 
 	public abstract String getTipo();
+
+
 }

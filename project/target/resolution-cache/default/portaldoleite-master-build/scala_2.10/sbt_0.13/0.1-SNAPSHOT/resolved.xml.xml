@@ -4,7 +4,7 @@
 		module="portaldoleite-master-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20151125102344"
+		publication="20151125155149"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

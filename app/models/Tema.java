@@ -51,6 +51,12 @@ public class Tema {
 		this.dicas = new ArrayList<Dica>();
 		this.usersDifficulty = new HashMap<String, String>();
 	}
+	public Tema(String name, Disciplina disciplina) {
+		this.name = name;
+		this.dicas = new ArrayList<Dica>();
+		this.usersDifficulty = new HashMap<String, String>();
+		this.disciplina = disciplina;
+	}
 	
 	public void incrementarDificuldade(String userLogin, int dificuldade) {
 		if (usersDifficulty.containsKey(userLogin)) {

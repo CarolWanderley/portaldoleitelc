@@ -85,36 +85,36 @@ public class Global extends GlobalSettings {
 	
 	private void criaDisciplinaTemas(){
 		si1 = new Disciplina("Sistemas de Informação 1");
-		si1.addTema(new Tema("Análise x Design"));
-		si1.addTema(new Tema("Orientação a objetos"));
-		si1.addTema(new Tema("GRASP"));
-		si1.addTema(new Tema("GoF"));
-		si1.addTema(new Tema("Arquitetura"));
-		si1.addTema(new Tema("Play"));
-		si1.addTema(new Tema("JavaScript"));
-		si1.addTema(new Tema("HTML / CSS / Bootstrap"));
-		si1.addTema(new Tema("Heroku"));
-		si1.addTema(new Tema("Labs"));
-		si1.addTema(new Tema("Minitestes"));
-		si1.addTema(new Tema("Projeto"));
+		si1.addTema(new Tema("Análise x Design", si1));
+		si1.addTema(new Tema("Orientação a objetos", si1));
+		si1.addTema(new Tema("GRASP", si1));
+		si1.addTema(new Tema("GoF", si1));
+		si1.addTema(new Tema("Arquitetura", si1));
+		si1.addTema(new Tema("Play", si1));
+		si1.addTema(new Tema("JavaScript", si1));
+		si1.addTema(new Tema("HTML / CSS / Bootstrap", si1));
+		si1.addTema(new Tema("Heroku", si1));
+		si1.addTema(new Tema("Labs", si1));
+		si1.addTema(new Tema("Minitestes", si1));
+		si1.addTema(new Tema("Projeto", si1));
 		dao.persist(si1);
 
 		
 		oac = new Disciplina("Organização e Arquitetura de Computadores");
-		oac.addTema(new Tema("Organização Básica de Computadores"));
-		oac.addTema(new Tema("Circuitos Combinacionais"));
-		oac.addTema(new Tema("Circuitos Sequenciais"));
-		oac.addTema(new Tema("Organização e Arquitetura Básicas de Computadores"));
-		oac.addTema(new Tema("Arquitetura do Conjunto de Instruções"));
+		oac.addTema(new Tema("Organização Básica de Computadores", oac));
+		oac.addTema(new Tema("Circuitos Combinacionais", oac));
+		oac.addTema(new Tema("Circuitos Sequenciais", oac));
+		oac.addTema(new Tema("Organização e Arquitetura Básicas de Computadores", oac));
+		oac.addTema(new Tema("Arquitetura do Conjunto de Instruções", oac));
 		dao.persist(oac);
 
 		
 		log = new Disciplina("Lógica Matemática");
-		log.addTema(new Tema("Lógica Proposicional"));
-		log.addTema(new Tema("Semântica LP"));
-		log.addTema(new Tema("Dedução LP"));
-		log.addTema(new Tema("Formas Normais e SAT solvers"));
-		log.addTema(new Tema("Lógica de Predicados"));
+		log.addTema(new Tema("Lógica Proposicional", log));
+		log.addTema(new Tema("Semântica LP", log));
+		log.addTema(new Tema("Dedução LP", log));
+		log.addTema(new Tema("Formas Normais e SAT solvers", log));
+		log.addTema(new Tema("Lógica de Predicados", log));
 		dao.persist(log);
 	
 	}
