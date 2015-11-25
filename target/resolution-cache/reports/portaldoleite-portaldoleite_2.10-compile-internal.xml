@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20151124093835"/>
+		date="20151125102409"/>
 	<dependencies>
 		<module organisation="org.hibernate" name="hibernate-entitymanager">
 			<revision name="4.2.3.Final" status="release" pubdate="20130703122649" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="76">
@@ -533,9 +533,6 @@
 				<caller organisation="oauth.signpost" name="signpost-commonshttp4" conf="compile, runtime" rev="1.2.1.2" rev-constraint-default="1.2.1.2" rev-constraint-dynamic="1.2.1.2" callerrev="1.2.1.2"/>
 				<caller organisation="com.typesafe.play" name="play_2.10" conf="compile, runtime" rev="1.2.1.2" rev-constraint-default="1.2.1.2" rev-constraint-dynamic="1.2.1.2" callerrev="2.2.3"/>
 				<artifacts>
-					<artifact name="signpost-core" type="test-jar" ext="jar" extra-classifier="tests" status="no" details="" size="29367" time="0" location="C:\Users\Luiza\.ivy2\cache\oauth.signpost\signpost-core\test-jars\signpost-core-1.2.1.2-tests.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2-tests.jar"/>
-					</artifact>
 					<artifact name="signpost-core" type="jar" ext="jar" status="no" details="" size="45277" time="0" location="C:\Users\Luiza\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2.jar"/>
 					</artifact>
@@ -673,7 +670,7 @@
 				<caller organisation="net.sf.ehcache" name="ehcache-core" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="2.6.6"/>
 				<caller organisation="org.slf4j" name="jul-to-slf4j" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.7.5"/>
 				<caller organisation="org.apache.mina" name="mina-core" conf="compile, runtime" rev="1.6.6" rev-constraint-default="1.6.6" rev-constraint-dynamic="1.6.6" callerrev="2.0.7"/>
-				<caller organisation="org.apache.directory.api" name="api-all" conf="default, compile, runtime, master" rev="1.6.6" rev-constraint-default="1.6.6" rev-constraint-dynamic="1.7.2" callerrev="1.0.0-M14"/>
+				<caller organisation="org.apache.directory.api" name="api-all" conf="compile, runtime" rev="1.6.6" rev-constraint-default="1.6.6" rev-constraint-dynamic="1.7.2" callerrev="1.0.0-M14"/>
 				<caller organisation="com.ning" name="async-http-client" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.7.18"/>
 				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0.13"/>
 				<caller organisation="com.typesafe.play" name="play_2.10" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="2.2.3"/>
@@ -688,7 +685,7 @@
 			<revision name="1.6.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
 				<evicted-by rev="1.7.5"/>
 				<caller organisation="org.apache.mina" name="mina-core" conf="compile, runtime" rev="1.6.6" rev-constraint-default="1.6.6" rev-constraint-dynamic="1.6.6" callerrev="2.0.7"/>
-				<caller organisation="org.apache.directory.api" name="api-all" conf="default, compile, runtime, master" rev="1.6.6" rev-constraint-default="1.6.6" rev-constraint-dynamic="1.7.2" callerrev="1.0.0-M14"/>
+				<caller organisation="org.apache.directory.api" name="api-all" conf="compile, runtime" rev="1.6.6" rev-constraint-default="1.6.6" rev-constraint-dynamic="1.7.2" callerrev="1.0.0-M14"/>
 				<artifacts>
 				</artifacts>
 			</revision>
@@ -873,7 +870,7 @@
 				<caller organisation="com.typesafe.play" name="play_2.10" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="2.2.3"/>
 				<caller organisation="com.typesafe.play" name="play-json_2.10" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="2.2.3"/>
 				<artifacts>
-					<artifact name="play-iteratees_2.10" type="jar" ext="jar" status="successful" details="" size="716673" time="11472" location="C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-iteratees_2.10\jars\play-iteratees_2.10-2.2.3.jar">
+					<artifact name="play-iteratees_2.10" type="jar" ext="jar" status="no" details="" size="716673" time="0" location="C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-iteratees_2.10\jars\play-iteratees_2.10-2.2.3.jar">
 						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-iteratees_2.10/2.2.3/play-iteratees_2.10-2.2.3.jar"/>
 					</artifact>
 				</artifacts>

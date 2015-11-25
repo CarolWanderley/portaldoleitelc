@@ -1,6 +1,6 @@
 package models;
 
-import java.util.Calendar;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -48,10 +48,6 @@ public abstract class Dica implements Comparable<Dica>{
 	private int concordancias;
 	
 	@Column
-	private Calendar dataPublicacao;
-	
-	private Compara comp;
-	@Column
 	private int discordancias;
 	
 	@Column
@@ -61,19 +57,12 @@ public abstract class Dica implements Comparable<Dica>{
 	private List<String> usuarioqueQueJaDenunciaram;
 	
 	@Transient
-	private Disciplina instanciaDisciplina;
+	private DicaDisciplina instanciaDisciplina;
 	
 	public Dica(){
-		dataPublicacao = Calendar.getInstance();
-		comp = new ComparaConcordancia();
-	}
-
-	public Compara getComp() {
-		return comp;
-	}
-
-	public void setComp(Compara comp) {
-		this.comp = comp;
+		this.metadicas = new ArrayList<MetaDica>();
+		this.usuarioqueQueJaDenunciaram = new ArrayList<String>();
+		this.usuariosQueJaVotaram = new ArrayList<String>();
 	}
 
 	public Tema getTema() {
@@ -160,19 +149,23 @@ public abstract class Dica implements Comparable<Dica>{
 	 * dicas da lista sejam as com mais concordâncias.
 	 */
 	@Override
-	public int compareTo(Dica otherDica) {	
-		return comp.comparador(this, otherDica);
+	public int compareTo(Dica otherDica) {
+		if (this.getConcordancias()>otherDica.getConcordancias()) {
+			return -1;
+		} else if (this.getConcordancias()<otherDica.getConcordancias()) {
+			return 1;
+		} else {
+			return 0;
+		}
 	}
 	
 	public void checaTipoDica() {
 		if (this.getTipo().equals("DicaDisciplina")) {
-			///wtf
+			this.instanciaDisciplina = (DicaDisciplina) this;
 		}		
 	}
-	public void setInstanciaDisciplina(Disciplina instanciaDisciplina) {
-		 this.instanciaDisciplina = instanciaDisciplina;
-	}
-	public Disciplina getInstanciaDisciplina() {
+	
+	public DicaDisciplina getInstanciaDisciplina() {
 		return instanciaDisciplina;
 	}
 	
@@ -197,9 +190,4 @@ public abstract class Dica implements Comparable<Dica>{
 	}
 
 	public abstract String getTipo();
-
-	public Calendar getDataPublicacao() {
-		return dataPublicacao;
-	}
-
 }

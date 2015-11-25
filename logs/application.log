@@ -1,99 +1,15 @@
-2015-11-24 10:03:53,188 - [INFO] - from play in pool-1-thread-1 
+2015-11-25 15:36:34,161 - [INFO] - from play in pool-4-thread-2 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-11-25 15:36:47,057 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
 
-2015-11-24 10:04:00,454 - [INFO] - from application in pool-1-thread-1 
+2015-11-25 15:36:47,403 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-11-25 15:36:53,609 - [INFO] - from application in play-internal-execution-context-1 
 Aplicação inicializada...
 
-2015-11-24 10:04:04,124 - [INFO] - from application in pool-1-thread-1 
-Aplicação finalizando...
-
-2015-11-24 10:04:04,624 - [INFO] - from play in pool-1-thread-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-24 10:04:05,166 - [INFO] - from application in pool-1-thread-1 
-Aplicação inicializada...
-
-2015-11-24 10:04:05,768 - [INFO] - from application in pool-1-thread-1 
-Aplicação finalizando...
-
-2015-11-24 10:04:05,862 - [INFO] - from play in pool-1-thread-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-24 10:04:06,200 - [INFO] - from application in pool-1-thread-1 
-Aplicação inicializada...
-
-2015-11-24 10:04:06,354 - [INFO] - from application in pool-1-thread-1 
-Aplicação finalizando...
-
-2015-11-24 10:04:06,388 - [INFO] - from play in pool-1-thread-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-24 10:04:06,591 - [INFO] - from application in pool-1-thread-1 
-Aplicação inicializada...
-
-2015-11-24 10:04:06,888 - [INFO] - from application in pool-1-thread-1 
-Aplicação finalizando...
-
-2015-11-24 10:04:06,937 - [INFO] - from play in pool-1-thread-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-24 10:04:07,194 - [INFO] - from application in pool-1-thread-1 
-Aplicação inicializada...
-
-2015-11-24 10:04:08,523 - [INFO] - from application in pool-1-thread-1 
-Aplicação finalizando...
-
-2015-11-24 10:04:08,713 - [INFO] - from play in pool-1-thread-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-24 10:04:09,684 - [INFO] - from application in pool-1-thread-1 
-Aplicação inicializada...
-
-2015-11-24 10:04:09,876 - [INFO] - from application in pool-1-thread-1 
-Aplicação finalizando...
-
-2015-11-24 10:04:10,011 - [INFO] - from play in pool-1-thread-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-24 10:04:10,570 - [INFO] - from application in pool-1-thread-1 
-Aplicação inicializada...
-
-2015-11-24 10:04:10,635 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
-Usuário não cadastrado
-
-2015-11-24 10:04:12,388 - [INFO] - from application in pool-1-thread-1 
-Aplicação finalizando...
-
-2015-11-24 10:04:12,508 - [INFO] - from play in pool-1-thread-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-24 10:04:13,055 - [INFO] - from application in pool-1-thread-1 
-Aplicação inicializada...
-
-2015-11-24 10:04:14,323 - [INFO] - from application in pool-1-thread-1 
-Aplicação finalizando...
-
-2015-11-24 10:04:14,418 - [INFO] - from play in pool-1-thread-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-24 10:04:14,786 - [INFO] - from application in pool-1-thread-1 
-Aplicação inicializada...
-
-2015-11-24 10:04:16,631 - [INFO] - from application in pool-1-thread-1 
-Aplicação finalizando...
-
-2015-11-24 10:04:16,685 - [INFO] - from play in pool-1-thread-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-24 10:04:16,946 - [INFO] - from application in pool-1-thread-1 
-Aplicação inicializada...
-
-2015-11-24 10:04:17,047 - [INFO] - from application in pool-1-thread-1 
-Aplicação finalizando...
-
-2015-11-24 10:04:17,111 - [INFO] - from play in pool-1-thread-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-24 10:04:17,437 - [INFO] - from application in pool-1-thread-1 
-Aplicação inicializada...
+2015-11-25 15:36:57,360 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
 
