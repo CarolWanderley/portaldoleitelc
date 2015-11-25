@@ -155,54 +155,54 @@ public class Global extends GlobalSettings {
 		dao.persist(luiz);
 		dao.flush();
 	}
-	private void criaDicas(){
-	// eu ia fazer um metadica pra cada usuário mas dica n pega nada de metadica wtf ??????? pra que metadica existe???
-		
-		DicaConselho dicaoac1 = new DicaConselho();
-		dicaoac1.setTema(oac.getTemaByNome("Organização Básica de Computadores"));
-		dicaoac1.setUser("dands");
-		dicaoac1.setConcordancias(3);
-		dicaoac1.addUsuarioQueVotou("luizac");
-		dicaoac1.addUsuarioQueVotou("italob");
-		dicaoac1.addUsuarioQueVotou("maril");
-		dicaoac1.setConselho("Lembrem-se de sempre checar o site da disciplina para ver se existem atividades que valem ponto!");
-		
-		DicaMaterial dicaoac2 = new DicaMaterial();
-		dicaoac2.setTema(oac.getTemaByNome("Circuitos Sequenciais"));
-		dicaoac2.setUser("luizf");
-		dicaoac2.setUrl("http://www.dsc.ufcg.edu.br/~joseana/OAC_NA07.pdf");
-		dicaoac2.setConcordancias(2);
-		dicaoac2.setDiscordancias(1);
-		dicaoac2.addUsuarioQueVotou("carolw");
-		dicaoac2.addUsuarioQueVotou("andren");
-		dicaoac2.addUsuarioQueVotou("dands");
-		
-		DicaMaterial dicasi1 = new DicaMaterial();
-		dicasi1.setTema(si1.getTemaByNome("HTML / CSS / Bootstrap"));
-		dicasi1.setUser("luizac");
-		dicasi1.setConcordancias(4);
-		dicasi1.addUsuarioQueVotou("luizf");
-		dicasi1.addUsuarioQueVotou("andren");
-		dicasi1.addUsuarioQueVotou("carolw");
-		dicasi1.addUsuarioQueVotou("alinet");
-		dicasi1.setUrl("https://www.codecademy.com/courses/web-beginner-en-yjvdd/0/1");
-		
-		DicaAssunto dicasi2 = new DicaAssunto();
-		dicasi2.setTema(si1.getTemaByNome("Play"));
-		dicasi2.setUser("carolw");
-		dicasi2.setConcordancias(2);
-		dicasi2.addUsuarioQueVotou("luizf");
-		dicasi2.addUsuarioQueVotou("alinet");
-		dicasi2.setAssunto("Para criar um projeto na framework play é necessário que você crie uma variável de ambiente, após isso vá na linha de comando, mude para a pasta desejada e digite 'activator ui'");
-		
-		DicaConselho dicalog = new DicaConselho();
-		dicalog.setTema(log.getTemaByNome("Dedução LP"));
-		dicalog.setUser("vinip");
-		dicalog.setConcordancias(1);
-		dicalog.setDiscordancias(2);
-		dicalog.addUsuarioQueVotou("maril");
-		dicalog.addUsuarioQueVotou("dands");
-		dicalog.addUsuarioQueVotou("natg");
-		dicalog.setConselho("Sempre é bom revisar esse assunto, cai muito na prova!");
-	}
+//	private void criaDicas(){
+//	// eu ia fazer um metadica pra cada usuário mas dica n pega nada de metadica wtf ??????? pra que metadica existe???
+//		
+//		DicaConselho dicaoac1 = new DicaConselho();
+//		dicaoac1.setTema(oac.getTemaByNome("Organização Básica de Computadores"));
+//		dicaoac1.setUser("dands");
+//		dicaoac1.setConcordancias(3);
+//		dicaoac1.addUsuarioQueVotou("luizac");
+//		dicaoac1.addUsuarioQueVotou("italob");
+//		dicaoac1.addUsuarioQueVotou("maril");
+//		dicaoac1.setConselho("Lembrem-se de sempre checar o site da disciplina para ver se existem atividades que valem ponto!");
+//		
+//		DicaMaterial dicaoac2 = new DicaMaterial();
+//		dicaoac2.setTema(oac.getTemaByNome("Circuitos Sequenciais"));
+//		dicaoac2.setUser("luizf");
+//		dicaoac2.setUrl("http://www.dsc.ufcg.edu.br/~joseana/OAC_NA07.pdf");
+//		dicaoac2.setConcordancias(2);
+//		dicaoac2.setDiscordancias(1);
+//		dicaoac2.addUsuarioQueVotou("carolw");
+//		dicaoac2.addUsuarioQueVotou("andren");
+//		dicaoac2.addUsuarioQueVotou("dands");
+//		
+//		DicaMaterial dicasi1 = new DicaMaterial();
+//		dicasi1.setTema(si1.getTemaByNome("HTML / CSS / Bootstrap"));
+//		dicasi1.setUser("luizac");
+//		dicasi1.setConcordancias(4);
+//		dicasi1.addUsuarioQueVotou("luizf");
+//		dicasi1.addUsuarioQueVotou("andren");
+//		dicasi1.addUsuarioQueVotou("carolw");
+//		dicasi1.addUsuarioQueVotou("alinet");
+//		dicasi1.setUrl("https://www.codecademy.com/courses/web-beginner-en-yjvdd/0/1");
+//		
+//		DicaAssunto dicasi2 = new DicaAssunto();
+//		dicasi2.setTema(si1.getTemaByNome("Play"));
+//		dicasi2.setUser("carolw");
+//		dicasi2.setConcordancias(2);
+//		dicasi2.addUsuarioQueVotou("luizf");
+//		dicasi2.addUsuarioQueVotou("alinet");
+//		dicasi2.setAssunto("Para criar um projeto na framework play é necessário que você crie uma variável de ambiente, após isso vá na linha de comando, mude para a pasta desejada e digite 'activator ui'");
+//		
+//		DicaConselho dicalog = new DicaConselho();
+//		dicalog.setTema(log.getTemaByNome("Dedução LP"));
+//		dicalog.setUser("vinip");
+//		dicalog.setConcordancias(1);
+//		dicalog.setDiscordancias(2);
+//		dicalog.addUsuarioQueVotou("maril");
+//		dicalog.addUsuarioQueVotou("dands");
+//		dicalog.addUsuarioQueVotou("natg");
+//		dicalog.setConselho("Sempre é bom revisar esse assunto, cai muito na prova!");
+//	}
 }
