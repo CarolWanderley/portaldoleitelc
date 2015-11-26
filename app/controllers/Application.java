@@ -34,14 +34,20 @@ public class Application extends Controller {
 	public static Result index() {
 		List<Disciplina> disciplinas = dao.findAllByClassName(Disciplina.class.getName());
 		List<Dica> dicas = dao.findAllByClassName(Dica.class.getName());
-		Collections.sort(dicas);
-		List<Dica>tmp = new ArrayList<>();
-		for(int i = 0; (i<dicas.size())&&(i<10); i++) {
-			tmp.add(dicas.get(i));
-		}
-		return ok(views.html.index.render(disciplinas, tmp));
+		organizaDicas(dicas);
+		return ok(views.html.index.render(disciplinas, dicas));
 	}
-	
+	private static void organizaDicas(List<Dica> dicas){
+		Collections.sort(dicas);
+		if(dicas.size()> 9){
+			List<Dica>temp = new ArrayList<>();
+			for(int i = 0;i < 10; i++) {
+				temp.add(dicas.get(i));
+			}
+			dicas = temp;
+		}
+		
+	}
 	@Transactional
 	@Security.Authenticated(Secured.class)
 	public static Result atualizaIndex(int tipo) {
@@ -63,12 +69,8 @@ public class Application extends Controller {
 		Dica.setComp(comp);
 		List<Disciplina> disciplinas = dao.findAllByClassName(Disciplina.class.getName());
 		List<Dica> dicas = dao.findAllByClassName(Dica.class.getName());
-		Collections.sort(dicas);
-		List<Dica>tmp = new ArrayList<>();
-		for(int i = 0; (i<dicas.size())&&(i<10); i++) {
-			tmp.add(dicas.get(i));
-		}
-		return ok(views.html.index.render(disciplinas, tmp));
+		organizaDicas(dicas);
+		return ok(views.html.index.render(disciplinas, dicas));
 	}
 
 	@Transactional
@@ -220,9 +222,6 @@ public class Application extends Controller {
 			int dificuldade = Integer.parseInt(formMap.get("dificuldade"));
 			String userLogin = session("login");
 			Tema tema = dao.findByEntityId(Tema.class, idTema);
-
-			// Tema tema = dao.findByEntityId(Tema.class, id)(Tema)
-			// dao.findByAttributeName("Tema", "name", nomeTema).get(0);
 			tema.incrementarDificuldade(userLogin, dificuldade);
 			dao.merge(tema);
 			dao.flush();

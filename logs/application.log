@@ -1,75 +1,15 @@
-2015-11-26 16:32:45,432 - [INFO] - from play in pool-4-thread-5 
+2015-11-26 20:58:50,022 - [INFO] - from play in pool-4-thread-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-11-26 16:33:03,170 - [INFO] - from play in play-internal-execution-context-1 
+2015-11-26 20:59:36,466 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
 
-2015-11-26 16:33:03,638 - [INFO] - from play in play-internal-execution-context-1 
+2015-11-26 20:59:36,687 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-11-26 16:33:08,729 - [INFO] - from application in play-internal-execution-context-1 
+2015-11-26 20:59:38,754 - [INFO] - from application in play-internal-execution-context-1 
 Aplicação inicializada...
 
-2015-11-26 16:33:12,035 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-11-26 16:36:10,596 - [INFO] - from application in play-internal-execution-context-1 
-Aplicação finalizando...
-
-2015-11-26 16:36:10,680 - [WARN] - from play in play-internal-execution-context-1 
-Error stopping plugin
-java.lang.RuntimeException: java.lang.IllegalArgumentException: attempt to create delete event with null entity
-	at play.db.jpa.JPA.withTransaction(JPA.java:108) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	at Global.onStop(Global.java:64) ~[classes/:na]
-	at play.core.j.JavaGlobalSettingsAdapter.onStop(JavaGlobalSettingsAdapter.scala:22) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.api.GlobalPlugin.onStop(GlobalSettings.scala:210) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1$$anonfun$apply$mcV$sp$2.apply(Play.scala:105) [play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1$$anonfun$apply$mcV$sp$2.apply(Play.scala:104) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.collection.immutable.List.foreach(List.scala:318) [scala-library-2.10.3.jar:na]
-	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply$mcV$sp(Play.scala:104) [play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:104) [play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:104) [play_2.10-2.2.3.jar:2.2.3]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) [play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1.apply(Play.scala:103) [play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1.apply(Play.scala:102) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
-	at play.api.Play$.stop(Play.scala:102) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:124) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.util.Success.flatMap(Try.scala:200) [scala-library-2.10.3.jar:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
-Caused by: java.lang.IllegalArgumentException: attempt to create delete event with null entity
-	at org.hibernate.event.spi.DeleteEvent.<init>(DeleteEvent.java:45) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
-	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:936) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
-	at org.hibernate.ejb.AbstractEntityManagerImpl.remove(AbstractEntityManagerImpl.java:905) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
-	at models.dao.GenericDAOImpl.removeById(GenericDAOImpl.java:44) ~[classes/:na]
-	at Global$2.invoke(Global.java:79) ~[classes/:na]
-	at play.db.jpa.JPA$1.apply(JPA.java:103) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	at play.db.jpa.JPA$1.apply(JPA.java:101) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	at play.db.jpa.JPA.withTransaction(JPA.java:132) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	at play.db.jpa.JPA.withTransaction(JPA.java:101) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	... 29 common frames omitted
-
-2015-11-26 16:36:10,865 - [INFO] - from play in play-internal-execution-context-1 
-datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
-
-2015-11-26 16:36:10,869 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-11-26 16:36:11,277 - [INFO] - from application in play-internal-execution-context-1 
-Aplicação inicializada...
-
-2015-11-26 16:36:11,309 - [INFO] - from play in play-internal-execution-context-1 
+2015-11-26 20:59:40,779 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

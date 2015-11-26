@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/Luiza/Documents/portaldoleite-master22/portaldoleite-master/conf/routes
-// @HASH:939e97981dd02b9399bd516dd41c2a4b98760c71
-// @DATE:Thu Nov 26 15:53:34 BRST 2015
+// @HASH:8863286a8769432baa292f4d95b6fe45d93939fb
+// @DATE:Thu Nov 26 20:59:00 BRST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
