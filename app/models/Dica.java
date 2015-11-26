@@ -1,6 +1,7 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -53,6 +54,12 @@ public abstract class Dica implements Comparable<Dica>{
 	@Column
 	private int flag;
 	
+	@Column
+	private Calendar dataPublicacao;
+//	
+//	@Column
+//	private Compara comp;
+	
 	@ElementCollection
 	private List<String> usuarioqueQueJaDenunciaram;
 	
@@ -64,6 +71,8 @@ public abstract class Dica implements Comparable<Dica>{
 		this.metadicas = new ArrayList<MetaDica>();
 		this.usuarioqueQueJaDenunciaram = new ArrayList<String>();
 		this.usuariosQueJaVotaram = new ArrayList<String>();
+		dataPublicacao = Calendar.getInstance();
+//		this.comp = new ComparaConcordancia(); 
 	}
 
 	public Tema getTema() {
@@ -186,6 +195,22 @@ public abstract class Dica implements Comparable<Dica>{
 	}
 
 	public abstract String getTipo();
+
+	public Calendar getDataPublicacao() {
+		return dataPublicacao;
+	}
+
+	public void setDataPublicacao(Calendar dataPublicacao) {
+		this.dataPublicacao = dataPublicacao;
+	}
+
+//	public Compara getComp() {
+//		return comp;
+//	}
+//
+//	public void setComp(Compara comp) {
+//		this.comp = comp;
+//	}
 
 
 }

@@ -1,6 +1,12 @@
 package models;
 
+
 public class ComparaConcordancia implements Compara {
+
+	@Override
+	public String toString() {
+		return "Comparador: ComparaConcordancia";
+	}
 
 	@Override
 	public int comparador(Dica atual, Dica outra) {
