@@ -6,6 +6,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+import models.ComparaConcordancia;
+import models.ComparaDiscordancia;
+import models.ComparaRecente;
 import models.Dica;
 import models.DicaAssunto;
 import models.DicaConselho;
@@ -46,6 +49,49 @@ public class Application extends Controller {
 		}
 		dicas  = temp;
 		}
+	}
+	@Transactional
+	@Security.Authenticated(Secured.class)
+	public static Result mudarComparadorConDica() {
+		ComparaConcordancia comp = new ComparaConcordancia();
+		List<Disciplina> disciplinas = dao.findAllByClassName(Disciplina.class.getName());
+		List<Dica> dicas = dao.findAllByClassName(Dica.class.getName());
+		for(Dica d : dicas){
+			d.setComp(comp);
+			dao.merge(d);
+		}
+		ordenaDicas(dicas);
+		dao.flush();
+		return ok(views.html.index.render(disciplinas, dicas));
+	}
+	
+	@Transactional
+	@Security.Authenticated(Secured.class)
+	public static Result mudarComparadorDisDica() {
+		ComparaDiscordancia comp = new ComparaDiscordancia();
+		List<Disciplina> disciplinas = dao.findAllByClassName(Disciplina.class.getName());
+		List<Dica> dicas = dao.findAllByClassName(Dica.class.getName());
+		for(Dica d : dicas){
+			d.setComp(comp);
+			dao.merge(d);
+		}
+		ordenaDicas(dicas);
+		dao.flush();
+		return ok(views.html.index.render(disciplinas, dicas));
+	}
+	@Transactional
+	@Security.Authenticated(Secured.class)
+	public static Result mudarComparadorResDica() {
+		ComparaRecente comp = new ComparaRecente();
+		List<Disciplina> disciplinas = dao.findAllByClassName(Disciplina.class.getName());
+		List<Dica> dicas = dao.findAllByClassName(Dica.class.getName());
+		for(Dica d : dicas){
+			d.setComp(comp);
+			dao.merge(d);
+		}
+		ordenaDicas(dicas);
+		dao.flush();
+		return ok(views.html.index.render(disciplinas, dicas));
 	}
 	
 	@Transactional
