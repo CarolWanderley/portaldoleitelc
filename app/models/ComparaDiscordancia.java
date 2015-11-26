@@ -1,16 +1,14 @@
 package models;
 
-public class ComparaDiscordancia implements Compara {
+import models.Dica;
+
+public class ComparaDiscordancia implements Compara{
 
 	@Override
-	public String toString() {
-		return "Comparador: ComparaDiscordancia";
-	}
-	@Override
-	public int comparador(Dica atual, Dica outra) {
-		if (atual.getDiscordancias()>outra.getDiscordancias()) {
+	public int comparador(Dica tip1, Dica tip2) {
+		if (tip1.getDiscordancias()>tip2.getDiscordancias()) {
 			return -1;
-		} else if (atual.getDiscordancias()<outra.getDiscordancias()) {
+		} else if (tip1.getDiscordancias()<tip2.getDiscordancias()) {
 			return 1;
 		} else {
 			return 0;

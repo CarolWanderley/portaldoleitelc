@@ -1,94 +1,61 @@
-New log file opened at Tue Nov 24 10:13:17 BRST 2015 by 15260@Cassandra
-Taking next connection to: 56114
-New client attempting to connect on port: 56115-56114
-  Address = /192.168.56.1:56114
-This client on port 56115 has uuid 09acad1a-2b4e-4500-9b6b-333cff167f23 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-09acad1a-2b4e-4500-9b6b-333cff167f23
-Taking next connection to: 56114
-New client attempting to connect on port: 56116-56114
-  Address = /192.168.56.1:56114
-Handshake exception on socket: 56116
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 56114
-New client attempting to connect on port: 56117-56114
-  Address = /192.168.56.1:56114
-This client on port 56117 has uuid c38c1c64-5dec-4dd7-8878-725157baafe3 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-09acad1a-2b4e-4500-9b6b-333cff167f23, activator-c38c1c64-5dec-4dd7-8878-725157baafe3
-Taking next connection to: 56114
-New client attempting to connect on port: 56210-56114
-  Address = /192.168.56.1:56114
-Handshake exception on socket: 56210
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 56114
-New client attempting to connect on port: 56211-56114
-  Address = /192.168.56.1:56114
-This client on port 56211 has uuid e90c2360-42b3-4d1b-845d-9fb20203324d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-09acad1a-2b4e-4500-9b6b-333cff167f23, activator-e90c2360-42b3-4d1b-845d-9fb20203324d
-Taking next connection to: 56114
+New log file opened at Thu Nov 26 15:21:40 BRST 2015 by 13268@Cassandra
+Taking next connection to: 56272
+New client attempting to connect on port: 56273-56272
+  Address = /192.168.56.1:56272
+This client on port 56273 has uuid 9ba5cf89-2006-4288-9db5-405b9c5e20c9 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-9ba5cf89-2006-4288-9db5-405b9c5e20c9
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
-New client attempting to connect on port: 56404-56114
-  Address = /192.168.56.1:56114
-Handshake exception on socket: 56404
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 56114
-New client attempting to connect on port: 56405-56114
-  Address = /192.168.56.1:56114
-This client on port 56405 has uuid c0404f04-27ee-4333-a28b-6c8b4b26cc23 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-e90c2360-42b3-4d1b-845d-9fb20203324d, activator-c0404f04-27ee-4333-a28b-6c8b4b26cc23
-Taking next connection to: 56114
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
+Taking next connection to: 56272
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 56114
+Taking next connection to: 56272
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56272
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56272
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56272
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56272
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56272
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 13268@Cassandra logs at Thu Nov 26 16:12:42 BRST 2015, goodbye.

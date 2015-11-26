@@ -1,5 +1,5 @@
 [debug] Copy resource mappings: 
-[debug] 	(C:\Users\Luiza\Documents\portaldoleite-master\conf\application.conf,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\application.conf)
-[debug] 	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF)
-[debug] 	(C:\Users\Luiza\Documents\portaldoleite-master\conf\routes,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\routes)
-[debug] 	(C:\Users\Luiza\Documents\portaldoleite-master\conf\META-INF\persistence.xml,C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes\META-INF\persistence.xml)
+[debug] 	(C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\conf\application.conf,C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\target\scala-2.10\classes\application.conf)
+[debug] 	(C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\conf\META-INF,C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\target\scala-2.10\classes\META-INF)
+[debug] 	(C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\conf\routes,C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\target\scala-2.10\classes\routes)
+[debug] 	(C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\conf\META-INF\persistence.xml,C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\target\scala-2.10\classes\META-INF\persistence.xml)

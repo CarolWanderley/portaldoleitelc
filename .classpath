@@ -3,7 +3,7 @@
   <classpathentry kind="src" path="app" output=".target"/>
   <classpathentry kind="src" path="test-2.10" output=".target"/>
   <classpathentry kind="src" path="test" output=".target"/>
-  <classpathentry path="C:\Users\Luiza\Documents\portaldoleite-master\target\scala-2.10\classes_managed" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\target\scala-2.10\classes_managed" kind="lib"></classpathentry>
   <classpathentry kind="lib" path="C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.10\jars\play-java-jdbc_2.10-2.2.3.jar"/>
   <classpathentry kind="lib" path="C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play-jdbc_2.10\jars\play-jdbc_2.10-2.2.3.jar"/>
   <classpathentry kind="lib" path="C:\Users\Luiza\.ivy2\cache\com.typesafe.play\play_2.10\jars\play_2.10-2.2.3.jar"/>

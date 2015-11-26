@@ -19,6 +19,8 @@ import javax.persistence.MapKeyColumn;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import models.ComparaRecente;
+
 @Table(name="dica")
 @Entity(name="Dica")
 public abstract class Dica implements Comparable<Dica>{
@@ -56,9 +58,8 @@ public abstract class Dica implements Comparable<Dica>{
 	
 	@Column
 	private Calendar dataPublicacao;
-	
-	@Transient
-	private Compara comp;
+		
+	private static Compara comp = new ComparaRecente();
 	
 	@ElementCollection
 	private List<String> usuarioqueQueJaDenunciaram;
@@ -66,13 +67,15 @@ public abstract class Dica implements Comparable<Dica>{
 	@Transient
 	private DicaDisciplina instanciaDisciplina;
 	
+	public final static int MAIS_RECENTES = 1;
+	public final static int MAIS_CONCORDANCIAS = 2;
+	public final static int MAIS_DISCORDANCIAS = 3;
 	
 	public Dica(){
 		this.metadicas = new ArrayList<MetaDica>();
 		this.usuarioqueQueJaDenunciaram = new ArrayList<String>();
 		this.usuariosQueJaVotaram = new ArrayList<String>();
-		dataPublicacao = Calendar.getInstance();
-		this.comp = new ComparaDiscordancia(); 
+		dataPublicacao = Calendar.getInstance(); 
 	}
 
 	public Tema getTema() {
@@ -207,8 +210,8 @@ public abstract class Dica implements Comparable<Dica>{
 		return comp;
 	}
 
-	public void setComp(Compara comp) {
-		this.comp = comp;
+	public static void setComp(Compara compara) {
+		comp = compara;
 	}
 
 

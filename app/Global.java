@@ -1,11 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import models.Dica;
 import models.DicaAssunto;
 import models.DicaConselho;
-import models.DicaDisciplina;
 import models.DicaMaterial;
 import models.Disciplina;
 import models.Tema;

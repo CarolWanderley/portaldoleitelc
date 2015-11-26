@@ -1,26 +1,26 @@
-2015-11-26 10:23:00,027 - [INFO] - from play in pool-4-thread-4 
+2015-11-26 16:32:45,432 - [INFO] - from play in pool-4-thread-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-11-26 10:23:59,364 - [INFO] - from play in play-internal-execution-context-1 
+2015-11-26 16:33:03,170 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
 
-2015-11-26 10:24:00,163 - [INFO] - from play in play-internal-execution-context-1 
+2015-11-26 16:33:03,638 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-11-26 10:24:07,758 - [INFO] - from application in play-internal-execution-context-1 
+2015-11-26 16:33:08,729 - [INFO] - from application in play-internal-execution-context-1 
 Aplicação inicializada...
 
-2015-11-26 10:24:11,468 - [INFO] - from play in play-internal-execution-context-1 
+2015-11-26 16:33:12,035 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-11-26 10:24:16,718 - [INFO] - from application in play-internal-execution-context-1 
+2015-11-26 16:36:10,596 - [INFO] - from application in play-internal-execution-context-1 
 Aplicação finalizando...
 
-2015-11-26 10:24:17,005 - [WARN] - from play in play-internal-execution-context-1 
+2015-11-26 16:36:10,680 - [WARN] - from play in play-internal-execution-context-1 
 Error stopping plugin
 java.lang.RuntimeException: java.lang.IllegalArgumentException: attempt to create delete event with null entity
 	at play.db.jpa.JPA.withTransaction(JPA.java:108) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	at Global.onStop(Global.java:66) ~[classes/:na]
+	at Global.onStop(Global.java:64) ~[classes/:na]
 	at play.core.j.JavaGlobalSettingsAdapter.onStop(JavaGlobalSettingsAdapter.scala:22) ~[play_2.10-2.2.3.jar:2.2.3]
 	at play.api.GlobalPlugin.onStop(GlobalSettings.scala:210) ~[play_2.10-2.2.3.jar:2.2.3]
 	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1$$anonfun$apply$mcV$sp$2.apply(Play.scala:105) [play_2.10-2.2.3.jar:2.2.3]
@@ -54,137 +54,22 @@ Caused by: java.lang.IllegalArgumentException: attempt to create delete event wi
 	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:936) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
 	at org.hibernate.ejb.AbstractEntityManagerImpl.remove(AbstractEntityManagerImpl.java:905) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
 	at models.dao.GenericDAOImpl.removeById(GenericDAOImpl.java:44) ~[classes/:na]
-	at Global$2.invoke(Global.java:81) ~[classes/:na]
+	at Global$2.invoke(Global.java:79) ~[classes/:na]
 	at play.db.jpa.JPA$1.apply(JPA.java:103) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
 	at play.db.jpa.JPA$1.apply(JPA.java:101) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
 	at play.db.jpa.JPA.withTransaction(JPA.java:132) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
 	at play.db.jpa.JPA.withTransaction(JPA.java:101) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
 	... 29 common frames omitted
 
-2015-11-26 10:24:17,547 - [INFO] - from play in play-internal-execution-context-1 
+2015-11-26 16:36:10,865 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
 
-2015-11-26 10:24:17,552 - [INFO] - from play in play-internal-execution-context-1 
+2015-11-26 16:36:10,869 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-11-26 10:24:18,402 - [INFO] - from application in play-internal-execution-context-1 
+2015-11-26 16:36:11,277 - [INFO] - from application in play-internal-execution-context-1 
 Aplicação inicializada...
 
-2015-11-26 10:24:18,456 - [INFO] - from play in play-internal-execution-context-1 
+2015-11-26 16:36:11,309 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
-
-2015-11-26 10:24:28,512 - [ERROR] - from application in New I/O worker #8 
-
-
-! Internal server error, for (GET) [/p%%EF%BF%BD%01?o=3&g=&s=&z=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%C9%A4%EF%BF%BD%7F] ->
-
-java.net.URISyntaxException: Malformed escape pair at index 2: /p%%EF%BF%BD%01
-	at java.net.URI$Parser.fail(URI.java:2829) ~[na:1.7.0_45]
-	at java.net.URI$Parser.scanEscape(URI.java:2959) ~[na:1.7.0_45]
-	at java.net.URI$Parser.scan(URI.java:2982) ~[na:1.7.0_45]
-	at java.net.URI$Parser.checkChars(URI.java:3000) ~[na:1.7.0_45]
-	at java.net.URI$Parser.parseHierarchical(URI.java:3086) ~[na:1.7.0_45]
-	at java.net.URI$Parser.parse(URI.java:3044) ~[na:1.7.0_45]
-	at java.net.URI.<init>(URI.java:595) ~[na:1.7.0_45]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anon$1.path(PlayDefaultUpstreamHandler.scala:99) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.docs.DocumentationHandler.maybeHandleDocRequest(DocumentationHandler.scala:58) ~[na:na]
-	at play.docs.DocumentationHandler.maybeHandleDocRequest(DocumentationHandler.scala:28) ~[na:na]
-	at play.core.ReloadableApplication.handleWebCommand(ApplicationProvider.scala:171) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.Server$$anonfun$getHandlerFor$1.apply(Server.scala:79) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.Server$$anonfun$getHandlerFor$1.apply(Server.scala:79) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.util.control.Exception$Catch$$anonfun$either$1.apply(Exception.scala:124) ~[scala-library-2.10.3.jar:na]
-	at scala.util.control.Exception$Catch$$anonfun$either$1.apply(Exception.scala:124) ~[scala-library-2.10.3.jar:na]
-	at scala.util.control.Exception$Catch.apply(Exception.scala:102) ~[scala-library-2.10.3.jar:na]
-	at scala.util.control.Exception$Catch.either(Exception.scala:124) ~[scala-library-2.10.3.jar:na]
-	at play.core.server.Server$class.getHandlerFor(Server.scala:79) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:35) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$9.apply(PlayDefaultUpstreamHandler.scala:118) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$9.apply(PlayDefaultUpstreamHandler.scala:118) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.util.Either.fold(Either.scala:98) [scala-library-2.10.3.jar:na]
-	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:112) [play_2.10-2.2.3.jar:2.2.3]
-	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.7.1.Final.jar:na]
-	at com.typesafe.netty.http.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:62) [netty-http-pipelining-1.1.2.jar:na]
-	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty-3.7.1.Final.jar:na]
-	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty-3.7.1.Final.jar:na]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_45]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_45]
-	at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
-
-2015-11-26 10:28:53,590 - [INFO] - from application in pool-4-thread-4 
-Aplicação finalizando...
-
-2015-11-26 10:28:53,658 - [WARN] - from play in pool-4-thread-4 
-Error stopping plugin
-java.lang.RuntimeException: java.lang.IllegalArgumentException: attempt to create delete event with null entity
-	at play.db.jpa.JPA.withTransaction(JPA.java:108) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	at Global.onStop(Global.java:66) ~[classes/:na]
-	at play.core.j.JavaGlobalSettingsAdapter.onStop(JavaGlobalSettingsAdapter.scala:22) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.api.GlobalPlugin.onStop(GlobalSettings.scala:210) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1$$anonfun$apply$mcV$sp$2.apply(Play.scala:105) [play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1$$anonfun$apply$mcV$sp$2.apply(Play.scala:104) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.collection.immutable.List.foreach(List.scala:318) [scala-library-2.10.3.jar:na]
-	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply$mcV$sp(Play.scala:104) [play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:104) [play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:104) [play_2.10-2.2.3.jar:2.2.3]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) [play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1.apply(Play.scala:103) [play_2.10-2.2.3.jar:2.2.3]
-	at play.api.Play$$anonfun$stop$1.apply(Play.scala:102) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
-	at play.api.Play$.stop(Play.scala:102) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.NettyServer.stop(NettyServer.scala:163) [play_2.10-2.2.3.jar:2.2.3]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$1.apply(PlayRun.scala:318) [sbt-plugin-2.2.3.jar:2.2.3]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$1.apply(PlayRun.scala:91) [sbt-plugin-2.2.3.jar:2.2.3]
-	at scala.Function7$$anonfun$tupled$1.apply(Function7.scala:35) [scala-library.jar:0.13.5]
-	at scala.Function7$$anonfun$tupled$1.apply(Function7.scala:34) [scala-library.jar:0.13.5]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) [scala-library.jar:0.13.5]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) [collections-0.13.0.jar:0.13.0]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) [task-system-0.13.0.jar:0.13.0]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) [tasks-0.13.0.jar:0.13.0]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) [tasks-0.13.0.jar:0.13.0]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) [control-0.13.0.jar:0.13.0]
-	at sbt.Execute.work(Execute.scala:244) [tasks-0.13.0.jar:0.13.0]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) [tasks-0.13.0.jar:0.13.0]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) [tasks-0.13.0.jar:0.13.0]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) [tasks-0.13.0.jar:0.13.0]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) [tasks-0.13.0.jar:0.13.0]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [na:1.7.0_45]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) [na:1.7.0_45]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [na:1.7.0_45]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_45]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_45]
-	at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
-Caused by: java.lang.IllegalArgumentException: attempt to create delete event with null entity
-	at org.hibernate.event.spi.DeleteEvent.<init>(DeleteEvent.java:45) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
-	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:936) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
-	at org.hibernate.ejb.AbstractEntityManagerImpl.remove(AbstractEntityManagerImpl.java:905) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
-	at models.dao.GenericDAOImpl.removeById(GenericDAOImpl.java:44) ~[classes/:na]
-	at Global$2.invoke(Global.java:81) ~[classes/:na]
-	at play.db.jpa.JPA$1.apply(JPA.java:103) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	at play.db.jpa.JPA$1.apply(JPA.java:101) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	at play.db.jpa.JPA.withTransaction(JPA.java:132) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	at play.db.jpa.JPA.withTransaction(JPA.java:101) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
-	... 36 common frames omitted
 

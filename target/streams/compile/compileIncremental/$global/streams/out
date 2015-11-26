@@ -2,14 +2,25 @@
 [debug] Initial source changes: 
 [debug] 	removed:Set()
 [debug] 	added: Set()
-[debug] 	modified: Set()
+[debug] 	modified: Set(C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\app\Global.java)
 [debug] Removed products: Set()
 [debug] External API changes: API Changes: Set()
 [debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated sources: Set()
+[debug] Initial directly invalidated sources: Set(C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\app\Global.java)
 [debug] 
 [debug] Sources indirectly invalidated by:
 [debug] 	product: Set()
 [debug] 	binary dep: Set()
 [debug] 	external source: Set()
-[debug] All initially invalidated sources: Set()
+[debug] All initially invalidated sources: Set(C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\app\Global.java)
+[info] Compiling 1 Java source to C:\Users\Luiza\Documents\portaldoleite-master22\portaldoleite-master\target\scala-2.10\classes...
+[debug] Attempting to call com.sun.tools.javac.api.JavacTool@35d88071 directly...
+[debug] Java compilation took 0.366738512 s
+[debug] Java analysis took 0.149715379 s
+[debug] Java compile + analysis took 0.603481367 s
+[debug] New invalidations:
+[debug] 	Set()
+[debug] Initial set of included nodes: Set()
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] 	Set()
+[debug] All newly invalidated sources after taking into account (previously) recompiled sources:Set()
