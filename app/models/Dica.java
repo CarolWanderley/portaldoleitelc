@@ -56,9 +56,9 @@ public abstract class Dica implements Comparable<Dica>{
 	
 	@Column
 	private Calendar dataPublicacao;
-//	
-//	@Column
-//	private Compara comp;
+	
+	@Transient
+	private Compara comp;
 	
 	@ElementCollection
 	private List<String> usuarioqueQueJaDenunciaram;
@@ -72,7 +72,7 @@ public abstract class Dica implements Comparable<Dica>{
 		this.usuarioqueQueJaDenunciaram = new ArrayList<String>();
 		this.usuariosQueJaVotaram = new ArrayList<String>();
 		dataPublicacao = Calendar.getInstance();
-//		this.comp = new ComparaConcordancia(); 
+		this.comp = new ComparaDiscordancia(); 
 	}
 
 	public Tema getTema() {
@@ -160,7 +160,6 @@ public abstract class Dica implements Comparable<Dica>{
 	 */
 	@Override
 	public int compareTo(Dica otherDica) {
-		ComparaConcordancia comp = new ComparaConcordancia();
 		return comp.comparador(this, otherDica);
 	}
 	
@@ -204,13 +203,13 @@ public abstract class Dica implements Comparable<Dica>{
 		this.dataPublicacao = dataPublicacao;
 	}
 
-//	public Compara getComp() {
-//		return comp;
-//	}
-//
-//	public void setComp(Compara comp) {
-//		this.comp = comp;
-//	}
+	public Compara getComp() {
+		return comp;
+	}
+
+	public void setComp(Compara comp) {
+		this.comp = comp;
+	}
 
 
 }
