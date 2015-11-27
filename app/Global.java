@@ -186,9 +186,9 @@ public class Global extends GlobalSettings {
 		dicasi1.setUrl("https://www.codecademy.com/courses/web-beginner-en-yjvdd/0/1");
 		
 		DicaAssunto dicasi2 = new DicaAssunto();
-		dicasi2.setTema(si1.getTemaByNome("Play"));
+		dicasi2.setTema(si1.getTemaByNome("Orientação a objetos"));
 		dicasi2.setUser("carolw");
-		dicasi2.setAssunto("Para criar um projeto na framework play é necessário que você crie uma variável de ambiente, após isso vá na linha de comando, mude para a pasta desejada e digite 'activator ui'");
+		dicasi2.setAssunto("A disciplina de Programação 2 é extremamente importante para pagar SI1 bem.");
 		
 		DicaConselho dicalog = new DicaConselho();
 		dicalog.setTema(log.getTemaByNome("Dedução LP"));

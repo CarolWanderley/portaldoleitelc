@@ -1,11 +1,16 @@
 package controllers;
+import gerenciadores.GerenciaDica;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import models.Compara;
+import Comparadores.Compara;
+import Comparadores.ComparaConcordancia;
+import Comparadores.ComparaDiscordancia;
+import Comparadores.ComparaRecente;
 import models.Dica;
 import models.DicaAssunto;
 import models.DicaConselho;
@@ -21,9 +26,6 @@ import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.mvc.Security;
-import models.ComparaRecente;
-import models.ComparaConcordancia;
-import models.ComparaDiscordancia;
 
 public class Application extends Controller {
 	private static final int MAX_DENUNCIAS = 3;
@@ -146,12 +148,12 @@ public class Application extends Controller {
 	@Transactional
 	@Security.Authenticated(Secured.class)
 	public static Result cadastrarDica(long idTema) {
-
+		
+		GerenciaDica aux = new GerenciaDica();
+		
 		DynamicForm filledForm = Form.form().bindFromRequest();
 
 		Map<String, String> formMap = filledForm.data();
-
-		// long idTema = Long.parseLong(formMap.get("idTema"));
 
 		Tema tema = dao.findByEntityId(Tema.class, idTema);
 		String userName = session("username");
@@ -163,41 +165,24 @@ public class Application extends Controller {
 			switch (tipoKey) {
 			case "assunto":
 				String assunto = formMap.get("assunto");
-				DicaAssunto dicaAssunto = new DicaAssunto(assunto);
-
-				tema.addDica(dicaAssunto);
-				dicaAssunto.setTema(tema);
-				dicaAssunto.setUser(userName);
-				dao.persist(dicaAssunto);
+				aux.setDica(new DicaAssunto(assunto));
+				aux.salvarDica(tema, userName, dao);
 				break;
 			case "conselho":
 				String conselho = formMap.get("conselho");
-				DicaConselho dicaConselho = new DicaConselho(conselho);
-
-				tema.addDica(dicaConselho);
-				dicaConselho.setTema(tema);
-				dicaConselho.setUser(userName);
-				dao.persist(dicaConselho);
+				aux.setDica(new DicaConselho(conselho));
+				aux.salvarDica(tema, userName, dao);
 				break;
 			case "disciplina":
 				String disciplinas = formMap.get("disciplinas");
 				String razao = formMap.get("razao");
-
-				DicaDisciplina dicaDisciplina = new DicaDisciplina(disciplinas, razao);
-
-				tema.addDica(dicaDisciplina);
-				dicaDisciplina.setTema(tema);
-				dicaDisciplina.setUser(userName);
-				dao.persist(dicaDisciplina);
+				aux.setDica(new DicaDisciplina(disciplinas, razao));
+				aux.salvarDica(tema, userName, dao);
 				break;
 			case "material":
 				String url = formMap.get("url");
-				DicaMaterial dicaMaterial = new DicaMaterial(url);
-
-				tema.addDica(dicaMaterial);
-				dicaMaterial.setTema(tema);
-				dicaMaterial.setUser(userName);
-				dao.persist(dicaMaterial);
+				aux.setDica(new DicaMaterial(url));
+				aux.salvarDica(tema, userName, dao);
 				break;
 			default:
 				break;

@@ -19,7 +19,8 @@ import javax.persistence.MapKeyColumn;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import models.ComparaRecente;
+import Comparadores.Compara;
+import Comparadores.ComparaRecente;
 
 @Table(name="dica")
 @Entity(name="Dica")
@@ -77,6 +78,7 @@ public abstract class Dica implements Comparable<Dica>{
 		this.usuariosQueJaVotaram = new ArrayList<String>();
 		dataPublicacao = Calendar.getInstance(); 
 	}
+	
 
 	public Tema getTema() {
 		return tema;
@@ -100,6 +102,8 @@ public abstract class Dica implements Comparable<Dica>{
 	}
 	
 	public abstract String getTexto();
+	
+	public abstract String getRazao();
 	
 	public int getConcordancias() {
 		return concordancias;
@@ -175,6 +179,9 @@ public abstract class Dica implements Comparable<Dica>{
 	public DicaDisciplina getInstanciaDisciplina() {
 		return instanciaDisciplina;
 	}
+	public void setInstanciaDisciplina(DicaDisciplina dica){
+		this.instanciaDisciplina = dica;
+	}
 	
 	public void addUsuarioFlag(String user) {
 		this.usuarioqueQueJaDenunciaram.add(user);
@@ -193,7 +200,7 @@ public abstract class Dica implements Comparable<Dica>{
 	}
 	
 	public boolean isUnvotable() {
-		return this.concordancias>=20 || this.discordancias>=20;
+		return this.concordancias >=20 || this.discordancias>=20;
 	}
 
 	public abstract String getTipo();
@@ -212,6 +219,9 @@ public abstract class Dica implements Comparable<Dica>{
 
 	public static void setComp(Compara compara) {
 		comp = compara;
+	}
+	public Disciplina getDisciplina(){
+		return this.getTema().getDisciplina();
 	}
 
 
