@@ -32,4 +32,10 @@ public class DicaMaterial extends Dica{
 	public String getTipo() {
 		return "DicaMaterial";
 	}
+
+	@Override
+	public String getRazao() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

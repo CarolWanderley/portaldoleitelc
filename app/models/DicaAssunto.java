@@ -32,6 +32,12 @@ public class DicaAssunto extends Dica{
 	public String getTipo() {
 		return "DicaAssunto";
 	}
+
+	@Override
+	public String getRazao() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }

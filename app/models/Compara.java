@@ -1,5 +1,7 @@
 package models;
 
+import models.Dica;
+
 
 public interface Compara {
 	
