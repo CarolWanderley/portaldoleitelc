@@ -1,5 +1,4 @@
 @(disciplinas: List[Disciplina], dicas: List[Dica])
-
 <!DOCTYPE html>
 
 <html>
@@ -69,14 +68,16 @@
                             @if(dicas.isEmpty()){
                             <p>Não existem dicas</p>
                              }
-
-
-                            @for(dica <- dicas){
+                     
+             
+                        @for(dica <- dicas){
+                            
+                        
                         <div class="uk-panel uk-panel-box dica" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
                            
                             <div>
                                 <a class="uk-article-meta uk-text-success">
-                                Informações sobre <strong>"@dica.getTema().getName()"</strong> <i class="uk-icon-hover uk-icon-info-circle"></i>, tema da disciplina: <strong>"@dica.getDisciplina().getNome()"</strong></a>   
+                                <span class="icon-lamp"></span> Informações sobre <strong>"@dica.getTema().getName()"</strong>, tema da disciplina: <strong>"@dica.getDisciplina().getNome()"</strong></a>   
                             </div>
                             <hr class="uk-article-divider">
                        
@@ -84,24 +85,52 @@
                                 @if(dica.getTipo().equals("DicaDisciplina")){
                                     <p>Disciplinas importantes:</p><p class="normal-font">@dica.getTexto()</p>
                                     <p>Razão:</p><p class="normal-font">@dica.getRazao()</p>
+                                    <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                                                 <button class="uk-button uk-button-primary uk-button"><span class="icon-menu" id="botao-dica-menu"></span> Detalhes <i class="uk-icon-caret-down"></i>
+                                                </button>
+                                                <div class="uk-dropdown">
+                                                    <li><i class="uk-icon-hover uk-icon-thumbs-up"></i> @dica.getConcordancias() <i class="uk-icon-hover uk-icon-thumbs-down"></i> @dica.getDiscordancias()</li>
+                                                </div>
+                                            </div>
                                 }
                                 @if(dica.getTipo().equals("DicaMaterial")){
-                                    <p>Link para material útil:</p><a href="@dica.getTexto()">@dica.getTexto()</a>
+                                    <p>Link para material útil:</p><a href="@dica.getTexto()">@dica.getTexto()</a><br>
+                                    <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                                                <button class="uk-button uk-button-primary uk-button"><span class="icon-menu" id="botao-dica-menu"></span> Detalhes <i class="uk-icon-caret-down"></i>
+                                                </button>
+                                                <div class="uk-dropdown">
+                                                    <li><i class="uk-icon-hover uk-icon-thumbs-up"></i> @dica.getConcordancias() <i class="uk-icon-hover uk-icon-thumbs-down"></i> @dica.getDiscordancias()</li>
+                                                </div>
+                                            </div>
                                 }
                                 @if(dica.getTipo().equals("DicaConselho")){
                                     <p>Conselho:</p><p class="normal-font">@dica.getTexto()</p>
+                                    <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                                                 <button class="uk-button uk-button-primary uk-button"><span class="icon-menu" id="botao-dica-menu"></span> Detalhes <i class="uk-icon-caret-down"></i>
+                                                </button>
+                                                <div class="uk-dropdown">
+                                                    <li><i class="uk-icon-hover uk-icon-thumbs-up"></i> @dica.getConcordancias() <i class="uk-icon-hover uk-icon-thumbs-down"></i> @dica.getDiscordancias()</li>
+                                                </div>
+                                            </div>
                                 }
                                 @if(dica.getTipo().equals("DicaAssunto")){
                                     <p>Assuntos importantes:</p><p class="normal-font">@dica.getTexto()</p>
+                                    <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                                                   <button class="uk-button uk-button-primary uk-button"><span class="icon-menu" id="botao-dica-menu"></span> Detalhes <i class="uk-icon-caret-down"></i>
+                                                </button>
+                                                <div class="uk-dropdown">
+                                                    <li><i class="uk-icon-hover uk-icon-thumbs-up"></i> @dica.getConcordancias() <i class="uk-icon-hover uk-icon-thumbs-down"></i> @dica.getDiscordancias()</li>
+                                                </div>
+                                            </div>
                                 }
                                 
                                 <p class="uk-article-meta uk-text-right">por @dica.getUser()</p>
-             <hr class="uk-article-divider-orange">
-                                    <br>
- </div><br>
-                            }
+                                <hr class="uk-article-divider-orange">
+                                <br>
+                                </div><br>
+                             
                       
-                       
+                       }
                     </div>
                 </div>
 </div>
