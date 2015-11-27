@@ -1,6 +1,9 @@
 
 					SISTEMA DE INFORMAÇÕES 1 - UFCG - 2015.1
 					PROJETO - PORTAL DO LEITE
+					
+					Ana Caroline Wanderley Silva
+					Luiza Silveira
 				
 				
 				Mudanças no código:
@@ -44,3 +47,6 @@
 				que retorna a disciplina usando o tema para acessa-la) ou tema sem ter um 
 				
 				NullPointerException.    
+				
+				Link da aplicação no heroku:
+				http://portaldoleitelc.herokuapp.com/
