@@ -35,7 +35,6 @@ public class DicaAssunto extends Dica{
 
 	@Override
 	public String getRazao() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 	
