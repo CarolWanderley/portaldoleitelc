@@ -37,10 +37,10 @@ public class Application extends Controller {
 	public static Result index() {
 		List<Disciplina> disciplinas = dao.findAllByClassName(Disciplina.class.getName());
 		List<Dica> dicas = dao.findAllByClassName(Dica.class.getName());
-		organizaDicas(dicas);
+		dicas = organizaDicas(dicas);
 		return ok(views.html.index.render(disciplinas, dicas));
 	}
-	private static void organizaDicas(List<Dica> dicas){
+	private static List<Dica> organizaDicas(List<Dica> dicas){
 		Collections.sort(dicas);
 		if(dicas.size()>= MAX_TAMANHO){
 			List<Dica>temp = new ArrayList<>();
@@ -49,7 +49,7 @@ public class Application extends Controller {
 			}
 			dicas = temp;
 		}
-		
+		return dicas;
 	}
 	@Transactional
 	@Security.Authenticated(Secured.class)
@@ -72,7 +72,7 @@ public class Application extends Controller {
 		Dica.setComp(comp);
 		List<Disciplina> disciplinas = dao.findAllByClassName(Disciplina.class.getName());
 		List<Dica> dicas = dao.findAllByClassName(Dica.class.getName());
-		organizaDicas(dicas);
+		dicas = organizaDicas(dicas);
 		return ok(views.html.index.render(disciplinas, dicas));
 	}
 
