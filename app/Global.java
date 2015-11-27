@@ -4,6 +4,7 @@ import java.util.List;
 import models.Dica;
 import models.DicaAssunto;
 import models.DicaConselho;
+import models.DicaDisciplina;
 import models.DicaMaterial;
 import models.Disciplina;
 import models.Tema;
@@ -195,11 +196,16 @@ public class Global extends GlobalSettings {
 		dicalog.setUser("vinip");
 		dicalog.setConselho("Sempre é bom revisar esse assunto, cai muito na prova!");
 		
+		DicaDisciplina dicalog1 = new DicaDisciplina("Matemática Discreta","Sempre é bom revisar esse assunto, cai muito na prova!");
+		dicalog1.setTema(log.getTemaByNome("Dedução LP"));
+		dicalog1.setUser("vinip");
+		
 		dao.persist(dicaoac1);
 		dao.persist(dicaoac2);
 		dao.persist(dicasi1);
 		dao.persist(dicasi2);
 		dao.persist(dicalog);
+		dao.persist(dicalog1);
 		
 		adicionarConDis(dicaoac1, dicaoac2, dicasi1, dicasi2, dicalog);
 		

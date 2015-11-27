@@ -29,6 +29,7 @@ import play.mvc.Security;
 
 public class Application extends Controller {
 	private static final int MAX_DENUNCIAS = 3;
+	private static final int MAX_TAMANHO = 10;
 	private static GenericDAOImpl dao = new GenericDAOImpl();
 
 	@Transactional
@@ -41,9 +42,9 @@ public class Application extends Controller {
 	}
 	private static void organizaDicas(List<Dica> dicas){
 		Collections.sort(dicas);
-		if(dicas.size()> 9){
+		if(dicas.size()>= MAX_TAMANHO){
 			List<Dica>temp = new ArrayList<>();
-			for(int i = 0;i < 10; i++) {
+			for(int i = 0;i < MAX_TAMANHO; i++) {
 				temp.add(dicas.get(i));
 			}
 			dicas = temp;
